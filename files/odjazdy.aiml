@@ -2,7 +2,7 @@
 <aiml version="2.0">
 	
 	<category>
-    <pattern>* <set>s1</set></pattern>
+    <pattern>O <set>s1</set></pattern>
     <template>
         <think> 
             <set name="godzina"><star index="2"/></set>  
@@ -19,8 +19,10 @@
     </template>
   </category>
   
+  
+  
   <category>
-    <pattern>* <set>s2</set></pattern>
+    <pattern>O <set>s2</set></pattern>
     <template>
         <think> 
             <set name="godzina"><star index="2"/></set>  
@@ -38,7 +40,7 @@
   </category>
   
   <category>
-    <pattern>* <set>s3</set></pattern>
+    <pattern>O <set>s3</set></pattern>
     <template>
         <think> 
             <set name="godzina"><star index="2"/></set>  
@@ -53,10 +55,9 @@
             <li>Ten pociąg nie odjeżdza o tej godzinie.</li> </condition>
     </template>
   </category>
-  
-    
+ 
   <category>
-    <pattern>* <set>s4</set></pattern>
+    <pattern>O <set>s4</set></pattern>
     <template>
         <think> 
             <set name="godzina"><star index="2"/></set>  
@@ -73,7 +74,7 @@
   </category>
   
   	<category>
-    <pattern>* <set>s8</set></pattern>
+    <pattern>O <set>s8</set></pattern>
     <template>
         <think> 
             <set name="godzina"><star index="2"/></set>  
@@ -91,7 +92,7 @@
   </category>
   
   <category>
-    <pattern>* <set>s9</set></pattern>
+    <pattern>O <set>s9</set></pattern>
     <template>
         <think> 
             <set name="godzina"><star index="2"/></set>  
@@ -109,7 +110,7 @@
   </category>
   
   <category>
-    <pattern>* <set>s10</set></pattern>
+    <pattern>O <set>s10</set></pattern>
     <template>
         <think> 
             <set name="godzina"><star index="2"/></set>  
@@ -127,7 +128,7 @@
   
     
   <category>
-    <pattern>* <set>s11</set></pattern>
+    <pattern>O <set>s11</set></pattern>
     <template>
         <think> 
             <set name="godzina"><star index="2"/></set>  
@@ -143,10 +144,11 @@
     </template>
   </category>
   
-  
-  
- 
-  
- 
+<category>
+    <pattern>O *</pattern>
+    <template>
+        Pociąg nie odjeżdza o tej godzinie..
+    </template>
+  </category>
   
 </aiml>
