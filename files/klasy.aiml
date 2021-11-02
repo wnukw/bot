@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+ <!-- PIERWSZA-->   
+    <category>
+    <pattern>W 1</pattern>
+    <template>
+         <think> 
+            <set name="klasa">1</set>  
+         </think>
+        <condition name="ilosc">
+            <li value ="jeden">Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
+            <condition name="rodzaj">
+                <li value="unknown">Przysługuje Panu jakaś zniżka?</li>
+                <li value="normalny"> To bedzie 
+                    <random>
+                    <li> 60</li>
+                    <li> 86</li>
+                    <li> 42</li>
+                    <li> 99</li>
+                    <li> 74</li>
+                    <li> 50</li>
+                 </random> złotych</li>
+                <li value="ulgowy"> W pierwszej klasie nie obowiązują zniżki studenckie. Musi Pan zapłacić 
+            <random>
+                    <li> 60</li>
+                    <li> 86</li>
+                    <li> 42</li>
+                    <li> 99</li>
+                    <li> 74</li>
+                    <li> 50</li>
+         </random> złotych. Tyle co za bilet normalny. Chyba, że woli Pan jednak miejsce w 2 klasie?</li>
+                </condition>
+            </li>  
+            <li value ="1">Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
+            <condition name="rodzaj">
+                <li value="unknown">Przysługuje Panu jakaś zniżka?</li>
+                <li value="normalny"> To bedzie 
+                    <random>
+                    <li> 60</li>
+                    <li> 86</li>
+                    <li> 42</li>
+                    <li> 99</li>
+                    <li> 74</li>
+                    <li> 50</li>
+                 </random> złotych</li>
+                <li value="ulgowy"> W pierwszej klasie nie obowiązują zniżki studenckie. Musi Pan zapłacić 
+            <random>
+                    <li> 60</li>
+                    <li> 86</li>
+                    <li> 42</li>
+                    <li> 99</li>
+                    <li> 74</li>
+                    <li> 50</li>
+         </random> złotych. Tyle co za bilet normalny. Chyba, że woli Pan jednak miejsce w 2 klasie?</li>
+                </condition>
+            </li>  
+            <li value ="jeden bilet">Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
+            <condition name="rodzaj">
+                <li value="unknown">Przysługuje Panu jakaś zniżka?</li>
+                <li value="normalny"> To bedzie 
+                    <random>
+                    <li> 60</li>
+                    <li> 86</li>
+                    <li> 42</li>
+                    <li> 99</li>
+                    <li> 74</li>
+                    <li> 50</li>
+                 </random> złotych</li>
+                <li value="ulgowy"> W pierwszej klasie nie obowiązują zniżki studenckie. Musi Pan zapłacić 
+            <random>
+                    <li> 60</li>
+                    <li> 86</li>
+                    <li> 42</li>
+                    <li> 99</li>
+                    <li> 74</li>
+                    <li> 50</li>
+         </random> złotych. Tyle co za bilet normalny. Chyba, że woli Pan jednak miejsce w 2 klasie?</li>
+                </condition>
+            </li>  
+            <li value ="1 bilet">Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
+            <condition name="rodzaj">
+                <li value="unknown">Przysługuje Panu jakaś zniżka?</li>
+                <li value="normalny"> To bedzie 
+            <random>
+            <li> 60</li>
+            <li> 86</li>
+            <li> 42</li>
+            <li> 99</li>
+            <li> 74</li>
+            <li> 50</li>
+         </random> złotych</li>
+                <li value="ulgowy"> W pierwszej klasie nie obowiązują zniżki studenckie. Musi Pan zapłacić
+            <random>
+                    <li> 60</li>
+                    <li> 86</li>
+                    <li> 42</li>
+                    <li> 99</li>
+                    <li> 74</li>
+                    <li> 50</li>
+         </random> złotych. Chyba, że woli Pan jednak miejsce w 2 klasie?</li>
+                </condition>
+            </li> 
+            <li value ="bilet">Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
+            <condition name="rodzaj">
+                <li value="unknown">Przysługuje Panu jakaś zniżka?</li>
+                <li value="normalny"> To bedzie 
+            <random>
+            <li> 60</li>
+            <li> 86</li>
+            <li> 42</li>
+            <li> 99</li>
+            <li> 74</li>
+            <li> 50</li>
+         </random> złotych</li>
+                <li value="ulgowy"> W 1 klasie nie obowiązują ulgi dla studentów. Musi Pan zapłacić 
+            <random>
+                    <li> 60</li>
+                    <li> 86</li>
+                    <li> 42</li>
+                    <li> 99</li>
+                    <li> 74</li>
+                    <li> 50</li>
+         </random> złotych. Chyba, że woli Pan jednak miejsce w 2 klasie?</li>
+                </condition>
+            </li> 
+            <li>Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
+            Czy przysługują Państwu jakieś zniżki?
+            </li>
+        </condition>
+        </template>
+          </category>
+          
+
+  
+   <category>
+    <pattern>W PIERWSZEJ</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* W PIERWSZEJ</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* W 1</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>W KLASIE PIERWSZEJ</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  <category>
+    <pattern>W KLASIE 1</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* W KLASIE PIERWSZEJ</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* W KLASIE 1</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>W PIERWSZEJ *</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  <category>
+    <pattern>W 1 *</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  
+  
+  <category>
+    <pattern>W PIERWSZEJ *</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* W PIERWSZEJ *</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* W 1 *</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>W KLASIE PIERWSZEJ *</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  <category>
+    <pattern>W KLASIE 1 *</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* W KLASIE PIERWSZEJ *</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* W KLASIE 1 *</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+
+
+<!-- DRUGA KLASA -->
+
+<category>
+    <pattern>W 2</pattern>
+    <template>
+         <think> 
+            <set name="klasa">2</set>  
+         </think>
+        <condition name="ilosc">
+            <li value ="jeden">Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
+            <condition name="rodzaj">
+                <li value="unknown">Przysługuje Panu jakaś zniżka?</li>
+                <li value="normalny"> To bedzie 
+            <random>
+            <li> 40</li>
+            <li> 66</li>
+            <li> 22</li>
+            <li> 79</li>
+            <li> 44</li>
+            <li> 30</li>
+         </random> złotych</li>
+                <li value="ulgowy"> Ze zniżką to bedzie 
+            <random>
+            <li> 20</li>
+            <li> 33</li>
+            <li> 11</li>
+            <li> 39</li>
+            <li> 22</li>
+            <li> 15</li>
+         </random> złotych</li>
+                </condition>
+            </li> 
+            <li value ="1">Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
+            <condition name="rodzaj">
+                <li value="unknown">Przysługuje Panu jakaś zniżka?</li>
+                <li value="normalny"> To bedzie 
+            <random>
+            <li> 40</li>
+            <li> 66</li>
+            <li> 22</li>
+            <li> 79</li>
+            <li> 44</li>
+            <li> 30</li>
+         </random> złotych</li>
+                <li value="ulgowy"> Ze zniżką to bedzie 
+            <random>
+            <li> 20</li>
+            <li> 33</li>
+            <li> 11</li>
+            <li> 39</li>
+            <li> 22</li>
+            <li> 15</li>
+         </random> złotych</li>
+                </condition>
+            </li> 
+            <li value ="jeden bilet">Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
+            <condition name="rodzaj">
+                <li value="unknown">Przysługuje Panu jakaś zniżka?</li>
+                <li value="normalny"> To bedzie 
+            <random>
+            <li> 40</li>
+            <li> 66</li>
+            <li> 22</li>
+            <li> 79</li>
+            <li> 44</li>
+            <li> 30</li>
+         </random> złotych</li>
+                <li value="ulgowy"> Ze zniżką to bedzie 
+            <random>
+            <li> 20</li>
+            <li> 33</li>
+            <li> 11</li>
+            <li> 39</li>
+            <li> 22</li>
+            <li> 15</li>
+         </random> złotych</li>
+                </condition>
+            </li>  
+            <li value ="1 bilet">Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
+            <condition name="rodzaj">
+                <li value="unknown">Przysługuje Panu jakaś zniżka?</li>
+                <li value="normalny"> To bedzie 
+            <random>
+            <li> 40</li>
+            <li> 66</li>
+            <li> 22</li>
+            <li> 79</li>
+            <li> 44</li>
+            <li> 30</li>
+         </random> złotych</li>
+                <li value="ulgowy"> Ze zniżką to bedzie 
+            <random>
+            <li> 20</li>
+            <li> 33</li>
+            <li> 11</li>
+            <li> 39</li>
+            <li> 22</li>
+            <li> 15</li>
+         </random> złotych</li>
+                </condition>
+            </li> 
+            <li value ="bilet">Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
+            <condition name="rodzaj">
+                <li value="unknown">Przysługuje Panu jakaś zniżka?</li>
+                <li value="normalny"> To bedzie 
+            <random>
+            <li> 40</li>
+            <li> 66</li>
+            <li> 22</li>
+            <li> 79</li>
+            <li> 44</li>
+            <li> 30</li>
+         </random> złotych</li>
+                <li value="ulgowy"> Ze zniżką to bedzie 
+            <random>
+            <li> 20</li>
+            <li> 33</li>
+            <li> 11</li>
+            <li> 39</li>
+            <li> 22</li>
+            <li> 15</li>
+         </random> złotych</li>
+                </condition>
+            </li> 
+            <li>Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
+            Czy któremuś z Państwa przysługują zniżki?
+            </li>
+        </condition>
+        </template>
+          </category>
+
+   <category>
+    <pattern>W DRUGIEJ</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* W DRUGIEJ</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* W 2</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>W KLASIE DRUGIEJ</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  <category>
+    <pattern>W KLASIE 2</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* W KLASIE DRUGIEJ</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* W KLASIE 2</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>W DRUGIEJ *</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+  <category>
+    <pattern>W 2 *</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+  
+  
+  <category>
+    <pattern>W DRUGIEJ *</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* W DRUGIEJ *</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* W 2 *</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>W KLASIE DRUGIEJ *</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+  <category>
+    <pattern>W KLASIE 2 *</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* W KLASIE DRUGIEJ *</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* W KLASIE 2 *</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+  
+    
+</aiml>

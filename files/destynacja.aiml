@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+<!-- DO WROCŁAWIA  -->    
+<!-- SPRAWDZONE  -->   
+    <category>
+        <pattern>DO WROCŁAWIA</pattern>
+        <template><random>
+            <li>Proszę Pana ale my jesteśmy we wrocławiu...</li>
+            <li>Przecież jesteśmy we Wrocławiu.</li>
+        </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DOBRZE, W TAKIM RAZIE DO WROCŁAWIA</pattern>
+        <template><srai>DO WROCŁAWIA</srai></template>
+    </category>
+    
+    <category>
+        <pattern>W TAKIM RAZIE DO WROCŁAWIA</pattern>
+        <template><srai>DO WROCŁAWIA</srai></template>
+    </category>
+    
+    <category>
+        <pattern>DOBRZE, TO DO WROCŁAWIA</pattern>
+        <template><srai>DO WROCŁAWIA</srai></template>
+    </category>
+    
+    <category>
+        <pattern>TO DO WROCŁAWIA</pattern>
+        <template><srai>DO WROCŁAWIA</srai></template>
+    </category>
+    
+<!-- INNE MIEJSCE SPRAWDZONE -->    
+	<category>
+    <pattern>DO *</pattern>
+    <template>
+        <think> <set name="miasto"><star /></set></think>
+        <condition name="pora">
+            <li value="W">
+                <random>
+                <li>Hmmm dobrze.<delay>2</delay>O której godzinie chciałby Pan wyjechać? Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
+                </random></li>
+                <li>Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
+                </random> O której godzinie chciałby Pan wyjechać? </li>
+                <li>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
+                 </random> O której godzinie chciałby Pan wyjechać? </li>
+                </random>
+            </li>
+            
+            <li> 
+                <random>
+                <li>Hmmm dobrze.<delay>2</delay>O której godzinie chciałby Pan wyjechać? Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
+                </random></li>
+                <li>Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
+                </random> O której godzinie chciałby Pan wyjechać? </li>
+                <li>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
+                 </random> O której godzinie chciałby Pan wyjechać? </li>
+                </random>
+            </li>
+        </condition>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>W TAKIM RAZIE DO *</pattern>
+    <template>
+        <think> <set name="miasto"><star /></set></think>
+        <condition name="pora">
+            <li value="W">
+                <random>
+                <li>Hmmm dobrze.<delay>2</delay>O której godzinie chciałby Pan wyjechać? Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
+                </random></li>
+                <li>Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
+                </random> O której godzinie chciałby Pan wyjechać? </li>
+                <li>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
+                 </random> O której godzinie chciałby Pan wyjechać? </li>
+                </random>
+            </li>
+            
+            <li> 
+                <random>
+                <li>Hmmm dobrze.<delay>2</delay>O której godzinie chciałby Pan wyjechać? Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
+                </random></li>
+                <li>Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
+                </random> O której godzinie chciałby Pan wyjechać? </li>
+                <li>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
+                 </random> O której godzinie chciałby Pan wyjechać? </li>
+                </random>
+            </li>
+        </condition>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>DOBRZE, W TAKIM RAZIE DO *</pattern>
+    <template>
+        <think> <set name="miasto"><star /></set></think>
+        <condition name="pora">
+            <li value="W">
+                <random>
+                <li>Hmmm dobrze.<delay>2</delay>O której godzinie chciałby Pan wyjechać? Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
+                </random></li>
+                <li>Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
+                </random> O której godzinie chciałby Pan wyjechać? </li>
+                <li>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
+                 </random> O której godzinie chciałby Pan wyjechać? </li>
+                </random>
+            </li>
+            
+            <li> 
+                <random>
+                <li>Hmmm dobrze.<delay>2</delay>O której godzinie chciałby Pan wyjechać? Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
+                </random></li>
+                <li>Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
+                </random> O której godzinie chciałby Pan wyjechać? </li>
+                <li>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
+                 </random> O której godzinie chciałby Pan wyjechać? </li>
+                </random>
+            </li>
+        </condition>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>TO DO *</pattern>
+    <template>
+        <think> <set name="miasto"><star /></set></think>
+        <condition name="pora">
+            <li value="W">
+                <random>
+                <li>Hmmm dobrze.<delay>2</delay>O której godzinie chciałby Pan wyjechać? Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
+                </random></li>
+                <li>Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
+                </random> O której godzinie chciałby Pan wyjechać? </li>
+                <li>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
+                 </random> O której godzinie chciałby Pan wyjechać? </li>
+                </random>
+            </li>
+            
+            <li> 
+                <random>
+                <li>Hmmm dobrze.<delay>2</delay>O której godzinie chciałby Pan wyjechać? Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
+                </random></li>
+                <li>Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
+                </random> O której godzinie chciałby Pan wyjechać? </li>
+                <li>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
+                 </random> O której godzinie chciałby Pan wyjechać? </li>
+                </random>
+            </li>
+        </condition>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>DOBRZE, TO DO *</pattern>
+    <template>
+        <think> <set name="miasto"><star /></set></think>
+        <condition name="pora">
+            <li value="W">
+                <random>
+                <li>Hmmm dobrze.<delay>2</delay>O której godzinie chciałby Pan wyjechać? Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
+                </random></li>
+                <li>Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
+                </random> O której godzinie chciałby Pan wyjechać? </li>
+                <li>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
+                 </random> O której godzinie chciałby Pan wyjechać? </li>
+                </random>
+            </li>
+            
+            <li> 
+                <random>
+                <li>Hmmm dobrze.<delay>2</delay>O której godzinie chciałby Pan wyjechać? Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
+                </random></li>
+                <li>Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
+                </random> O której godzinie chciałby Pan wyjechać? </li>
+                <li>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
+                 </random> O której godzinie chciałby Pan wyjechać? </li>
+                </random>
+            </li>
+        </condition>
+      </template>
+  </category>
+  
+</aiml>

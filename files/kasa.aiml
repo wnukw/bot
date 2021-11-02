@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+    <pattern>PROSZĘ</pattern>
+    <template>
+        Dziękuję
+    </template>
+  </category>
+  
+   <category>
+    <pattern>PROSZĘ, ODLICZONE</pattern>
+    <template>
+        Dziękuję
+    </template>
+  </category>
+ 
+  <category>
+    <pattern>MAM TYLKO 100 ZŁOTYCH</pattern>
+    <template>
+        Dziękuję. I tu dla Pana reszta.
+    </template>
+  </category>
+  
+   <category>
+    <pattern>MAM TYLKO 50 ZŁOTYCH</pattern>
+    <template>
+        Dziękuję. I tu dla Pana reszta.
+    </template>
+  </category>
+ 
+  <category>
+    <pattern>NIE MAM DROBNYCH</pattern>
+    <template>
+        Nie ma problemu. <delay>4</delay> Proszę reszta. 
+    </template>
+  </category>
+ 
+  <category>
+    <pattern>NIE MAM *</pattern>
+    <template>
+        <condition name="liczba">
+            <li value="unknown"> <random>
+                <li>Niestety nie mogę sprzedać biletów. Do widzenia.</li>
+                <li>W takim wypadku nie mogę sprzedać biletów. Do widzenia.</li>
+                <li>Nie mogę sprzedać Panu biletów. Do widzenia.</li>
+                <li>Jeżeli nie ma Pan tyle pięniędzy to nie mogę sprzedać Panu biletów. Do widzenia.</li>
+            </random></li>
+            <li value="P"> <random>
+                <li>Niestety nie mogę sprzedać biletu. Do widzenia.</li>
+                <li>W takim wypadku nie mogę sprzedać biletu. Do widzenia.</li>
+                <li>Nie mogę sprzedać Panu biletu. Do widzenia.</li>
+                <li>Jeżeli nie ma Pan tyle pięniędzy to nie mogę sprzedać Panu biletu. Do widzenia.</li>
+            </random></li>
+        </condition>
+       
+    </template>
+  </category>
+</aiml>

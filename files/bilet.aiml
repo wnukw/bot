@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  
+
+<!--ile os -->  
+    <category>
+    <pattern><set>jedenbilet</set></pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+    <condition name="ilosc" >
+        <li value="bilety">Ile biletów chciałby Pan kupić?</li>
+        <li value="bilet"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li value="1 bilet"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li value="jeden bilet"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li value="1"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li value="jeden"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
+        </condition>
+    </template>
+  </category>
+  
+
+  
+   <category>
+    <pattern>TAK</pattern>
+    <template>Jakie?</template>
+  </category>
+  
+  <category>
+    <pattern>TAK, * STUDENCKA</pattern>
+    <template>
+    <condition name="klasa">
+            <li value="1">Niestety zniżka studencka nie obowiązuje w wagonach 1 klasy. Może jakaś inna zniżka?</li>
+            <li value="2">Dobrze.<delay>1</delay>Ze zniżką to bedzie 
+            <random>
+            <li> 30</li>
+            <li> 43</li>
+            <li> 21</li>
+            <li> 48</li>
+            <li> 37</li>
+            <li> 25</li>
+         </random> złotych</li>
+        </condition>
+    </template>
+  </category>
+  
+   <category>
+    <pattern>TAK STUDENCKA</pattern>
+    <template>
+    <condition name="klasa">
+            <li value="1">Niestety zniżka studencka nie obowiązuje w wagonach 1 klasy. Może jakaś inna zniżka?</li>
+            <li value="2">Dobrze.<delay>1</delay>Ze zniżką to bedzie 
+            <random>
+            <li> 30</li>
+            <li> 43</li>
+            <li> 21</li>
+            <li> 48</li>
+            <li> 37</li>
+            <li> 25</li>
+         </random> złotych</li>
+        </condition>
+    </template>
+  </category>
+  
+   
+ 
+  
+</aiml>
+

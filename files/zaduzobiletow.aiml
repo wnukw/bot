@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	    
+<!-- ZA DUŻO BILETÓW POPROSZĘ-->
+  	<category>
+    <pattern>POPROSZĘ * BILETÓW</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+        Niestety, nie mogę Panu spzedać wiecej niż 8 biletów</template>
+  </category>
+  	
+  	<category>
+    <pattern>POPROSZĘ * BILETÓW DO <set>miasta</set></pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+       </think>
+         <srai>POPROSZĘ * BILETÓW</srai>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>POPROSZĘ * BILETÓW DO *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+         <srai>POPROSZĘ * BILETÓW</srai>
+      </template>
+  </category>
+<!-- ZA DUŻO BILETÓW WITAM POPROSZĘ--> 
+  	<category>
+    <pattern>WITAM, POPROSZĘ * BILETÓW</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+        Niestety, nie mogę Panu spzedać wiecej niż 8 biletów</template>
+  </category>
+  	
+  	<category>
+    <pattern>WITAM, POPROSZĘ * BILETÓW DO <set>miasta</set></pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+       </think>
+         <srai>WITAM, POPROSZĘ * BILETÓW</srai>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>WITAM, POPROSZĘ * BILETÓW DO *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+         <srai>WITAM, POPROSZĘ * BILETÓW</srai>
+      </template>
+  </category>
+  
+<!-- ZA DUŻO BILETÓW DZIEŃ DOBRY POPROSZĘ--> 
+  	<category>
+    <pattern>DZIEŃ DOBRY, POPROSZĘ * BILETÓW</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+        Niestety, nie mogę Panu spzedać wiecej niż 8 biletów</template>
+  </category>
+  	
+  	<category>
+    <pattern>DZIEŃ DOBRY, POPROSZĘ * BILETÓW DO <set>miasta</set></pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+       </think>
+         <srai>DZIEŃ DOBRY, POPROSZĘ * BILETÓW</srai>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>DZIEŃ DOBRY, POPROSZĘ * BILETÓW DO *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+         <srai>DZIEŃ DOBRY, POPROSZĘ * BILETÓW</srai>
+      </template>
+  </category>
+  
+<!-- ZA DUŻO BILETÓW DOBRY WIECZÓR POPROSZĘ--> 
+  	<category>
+    <pattern>DOBRY WIECZÓR, POPROSZĘ * BILETÓW</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+        Niestety, nie mogę Panu spzedać wiecej niż 8 biletów</template>
+  </category>
+  	
+  	<category>
+    <pattern>DOBRY WIECZÓR, POPROSZĘ * BILETÓW DO <set>miasta</set></pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+       </think>
+         <srai>DOBRY WIECZÓR, POPROSZĘ * BILETÓW</srai>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>DOBRY WIECZÓR, POPROSZĘ * BILETÓW DO *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+         <srai>DOBRY WIECZÓR, POPROSZĘ * BILETÓW</srai>
+      </template>
+  </category>
+  
+  <!-- ZA DUŻO BILETÓW PROSZĘ-->
+  	<category>
+    <pattern>PROSZĘ * BILETÓW</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+        Niestety, nie mogę Panu spzedać wiecej niż 8 biletów</template>
+  </category>
+  	
+  	<category>
+    <pattern>PROSZĘ * BILETÓW DO <set>miasta</set></pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+       </think>
+         <srai>PROSZĘ * BILETÓW</srai>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>PROSZĘ * BILETÓW DO *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+         <srai>PROSZĘ * BILETÓW</srai>
+      </template>
+  </category>
+<!-- ZA DUŻO BILETÓW WITAM PROSZĘ--> 
+  	<category>
+    <pattern>WITAM, PROSZĘ * BILETÓW</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+        Niestety, nie mogę Panu spzedać wiecej niż 8 biletów</template>
+  </category>
+  	
+  	<category>
+    <pattern>WITAM, PROSZĘ * BILETÓW DO <set>miasta</set></pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+       </think>
+         <srai>WITAM, PROSZĘ * BILETÓW</srai>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>WITAM, PROSZĘ * BILETÓW DO *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+         <srai>WITAM, PROSZĘ * BILETÓW</srai>
+      </template>
+  </category>
+  
+<!-- ZA DUŻO BILETÓW DZIEŃ DOBRY PROSZĘ--> 
+  	<category>
+    <pattern>DZIEŃ DOBRY, PROSZĘ * BILETÓW</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+        Niestety, nie mogę Panu spzedać wiecej niż 8 biletów</template>
+  </category>
+  	
+  	<category>
+    <pattern>DZIEŃ DOBRY, PROSZĘ * BILETÓW DO <set>miasta</set></pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+       </think>
+         <srai>DZIEŃ DOBRY, PROSZĘ * BILETÓW</srai>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>DZIEŃ DOBRY, PROSZĘ * BILETÓW DO *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+         <srai>DZIEŃ DOBRY, PROSZĘ * BILETÓW</srai>
+      </template>
+  </category>
+  
+<!-- ZA DUŻO BILETÓW DOBRY WIECZÓR PROSZĘ--> 
+  	<category>
+    <pattern>DOBRY WIECZÓR, PROSZĘ * BILETÓW</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+        Niestety, nie mogę Panu spzedać wiecej niż 8 biletów</template>
+  </category>
+  	
+  	<category>
+    <pattern>DOBRY WIECZÓR, PROSZĘ * BILETÓW DO <set>miasta</set></pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+       </think>
+         <srai>DOBRY WIECZÓR, PROSZĘ * BILETÓW</srai>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>DOBRY WIECZÓR, PROSZĘ * BILETÓW DO *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+         <srai>DOBRY WIECZÓR, PROSZĘ * BILETÓW</srai>
+      </template>
+  </category>
+  
+    <!-- ZA DUŻO BILETÓW CHCIAŁBYM KUPIĆ-->
+  	<category>
+    <pattern>CHCIAŁBYM KUPIĆ * BILETÓW</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+        Niestety, nie mogę Panu spzedać wiecej niż 8 biletów</template>
+  </category>
+  	
+  	<category>
+    <pattern>CHCIAŁBYM KUPIĆ * BILETÓW DO <set>miasta</set></pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+       </think>
+         <srai>CHCIAŁBYM KUPIĆ * BILETÓW</srai>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>CHCIAŁBYM KUPIĆ * BILETÓW DO *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+         <srai>CHCIAŁBYM KUPIĆ * BILETÓW</srai>
+      </template>
+  </category>
+<!-- ZA DUŻO BILETÓW WITAM CHCIAŁBYM KUPIĆ--> 
+  	<category>
+    <pattern>WITAM, CHCIAŁBYM KUPIĆ * BILETÓW</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+        Niestety, nie mogę Panu spzedać wiecej niż 8 biletów</template>
+  </category>
+  	
+  	<category>
+    <pattern>WITAM, CHCIAŁBYM KUPIĆ * BILETÓW DO <set>miasta</set></pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+       </think>
+         <srai>WITAM, CHCIAŁBYM KUPIĆ * BILETÓW</srai>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>WITAM, CHCIAŁBYM KUPIĆ * BILETÓW DO *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+         <srai>WITAM, CHCIAŁBYM KUPIĆ * BILETÓW</srai>
+      </template>
+  </category>
+  
+<!-- ZA DUŻO BILETÓW DZIEŃ DOBRY CHCIAŁBYM KUPIĆ--> 
+  	<category>
+    <pattern>DZIEŃ DOBRY, CHCIAŁBYM KUPIĆ * BILETÓW</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+        Niestety, nie mogę Panu spzedać wiecej niż 8 biletów</template>
+  </category>
+  	
+  	<category>
+    <pattern>DZIEŃ DOBRY, CHCIAŁBYM KUPIĆ * BILETÓW DO <set>miasta</set></pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+       </think>
+         <srai>DZIEŃ DOBRY, CHCIAŁBYM KUPIĆ * BILETÓW</srai>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>DZIEŃ DOBRY, CHCIAŁBYM KUPIĆ * BILETÓW DO *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+         <srai>DZIEŃ DOBRY, CHCIAŁBYM KUPIĆ * BILETÓW</srai>
+      </template>
+  </category>
+  
+<!-- ZA DUŻO BILETÓW DOBRY WIECZÓR CHCIAŁBYM KUPIĆ--> 
+  	<category>
+    <pattern>DOBRY WIECZÓR, CHCIAŁBYM KUPIĆ * BILETÓW</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+        Niestety, nie mogę Panu spzedać wiecej niż 8 biletów</template>
+  </category>
+  	
+  	<category>
+    <pattern>DOBRY WIECZÓR, CHCIAŁBYM KUPIĆ * BILETÓW DO <set>miasta</set></pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+       </think>
+         <srai>DOBRY WIECZÓR, CHCIAŁBYM KUPIĆ * BILETÓW</srai>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>DOBRY WIECZÓR, CHCIAŁBYM KUPIĆ * BILETÓW DO *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+         <srai>DOBRY WIECZÓR, CHCIAŁBYM KUPIĆ * BILETÓW</srai>
+      </template>
+  </category>
+  
+<!-- ZA DUŻO BILETÓW CHCĘ KUPIĆ-->
+  	<category>
+    <pattern>CHCĘ KUPIĆ * BILETÓW</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+        Niestety, nie mogę Panu spzedać wiecej niż 8 biletów</template>
+  </category>
+  	
+  	<category>
+    <pattern>CHCĘ KUPIĆ * BILETÓW DO <set>miasta</set></pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+       </think>
+         <srai>CHCĘ KUPIĆ * BILETÓW</srai>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>CHCĘ KUPIĆ * BILETÓW DO *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+         <srai>CHCĘ KUPIĆ * BILETÓW</srai>
+      </template>
+  </category>
+<!-- ZA DUŻO BILETÓW WITAM CHCĘ KUPIĆ--> 
+  	<category>
+    <pattern>WITAM, CHCĘ KUPIĆ * BILETÓW</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+        Niestety, nie mogę Panu spzedać wiecej niż 8 biletów</template>
+  </category>
+  	
+  	<category>
+    <pattern>WITAM, CHCĘ KUPIĆ * BILETÓW DO <set>miasta</set></pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+       </think>
+         <srai>WITAM, CHCĘ KUPIĆ * BILETÓW</srai>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>WITAM, CHCĘ KUPIĆ * BILETÓW DO *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+         <srai>WITAM, CHCĘ KUPIĆ * BILETÓW</srai>
+      </template>
+  </category>
+  
+<!-- ZA DUŻO BILETÓW DZIEŃ DOBRY CHCĘ KUPIĆ--> 
+  	<category>
+    <pattern>DZIEŃ DOBRY, CHCĘ KUPIĆ * BILETÓW</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+        Niestety, nie mogę Panu spzedać wiecej niż 8 biletów</template>
+  </category>
+  	
+  	<category>
+    <pattern>DZIEŃ DOBRY, CHCĘ KUPIĆ * BILETÓW DO <set>miasta</set></pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+       </think>
+         <srai>DZIEŃ DOBRY, CHCĘ KUPIĆ * BILETÓW</srai>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>DZIEŃ DOBRY, CHCĘ KUPIĆ * BILETÓW DO *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+         <srai>DZIEŃ DOBRY, CHCĘ KUPIĆ * BILETÓW</srai>
+      </template>
+  </category>
+  
+<!-- ZA DUŻO BILETÓW DOBRY WIECZÓR CHCĘ KUPIĆ--> 
+  	<category>
+    <pattern>DOBRY WIECZÓR, CHCĘ KUPIĆ * BILETÓW</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+        Niestety, nie mogę Panu spzedać wiecej niż 8 biletów</template>
+  </category>
+  	
+  	<category>
+    <pattern>DOBRY WIECZÓR, CHCĘ KUPIĆ * BILETÓW DO <set>miasta</set></pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+       </think>
+         <srai>DOBRY WIECZÓR, CHCĘ KUPIĆ * BILETÓW</srai>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>DOBRY WIECZÓR, CHCĘ KUPIĆ * BILETÓW DO *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+         <srai>DOBRY WIECZÓR, CHCĘ KUPIĆ * BILETÓW</srai>
+      </template>
+  </category>
+  
+  
+  <!-- ZA DUŻO BILETÓW CHCĘ -->
+  	<category>
+    <pattern>CHCĘ * BILETÓW</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+        Niestety, nie mogę Panu spzedać wiecej niż 8 biletów</template>
+  </category>
+  	
+  	<category>
+    <pattern>CHCĘ * BILETÓW DO <set>miasta</set></pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+       </think>
+         <srai>CHCĘ * BILETÓW</srai>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>CHCĘ * BILETÓW DO *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+         <srai>CHCĘ * BILETÓW</srai>
+      </template>
+  </category>
+<!-- ZA DUŻO BILETÓW WITAM CHCĘ--> 
+  	<category>
+    <pattern>WITAM, CHCĘ * BILETÓW</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+        Niestety, nie mogę Panu spzedać wiecej niż 8 biletów</template>
+  </category>
+  	
+  	<category>
+    <pattern>WITAM, CHCĘ * BILETÓW DO <set>miasta</set></pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+       </think>
+         <srai>WITAM, CHCĘ * BILETÓW</srai>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>WITAM, CHCĘ * BILETÓW DO *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+         <srai>WITAM, CHCĘ * BILETÓW</srai>
+      </template>
+  </category>
+  
+<!-- ZA DUŻO BILETÓW DZIEŃ DOBRY CHCĘ--> 
+  	<category>
+    <pattern>DZIEŃ DOBRY, CHCĘ * BILETÓW</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+        Niestety, nie mogę Panu spzedać wiecej niż 8 biletów</template>
+  </category>
+  	
+  	<category>
+    <pattern>DZIEŃ DOBRY, CHCĘ * BILETÓW DO <set>miasta</set></pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+       </think>
+         <srai>DZIEŃ DOBRY, CHCĘ * BILETÓW</srai>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>DZIEŃ DOBRY, CHCĘ * BILETÓW DO *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+         <srai>DZIEŃ DOBRY, CHCĘ * BILETÓW</srai>
+      </template>
+  </category>
+  
+<!-- ZA DUŻO BILETÓW DOBRY WIECZÓR CHCĘ KUPIĆ--> 
+  	<category>
+    <pattern>DOBRY WIECZÓR, CHCĘ * BILETÓW</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+        Niestety, nie mogę Panu spzedać wiecej niż 8 biletów</template>
+  </category>
+  	
+  	<category>
+    <pattern>DOBRY WIECZÓR, CHCĘ * BILETÓW DO <set>miasta</set></pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+       </think>
+         <srai>DOBRY WIECZÓR, CHCĘ * BILETÓW</srai>
+      </template>
+  </category>
+  
+    <category>
+    <pattern>DOBRY WIECZÓR, CHCĘ * BILETÓW DO *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star /></set>  
+    </think>
+         <srai>DOBRY WIECZÓR, CHCĘ * BILETÓW</srai>
+      </template>
+  </category>
+
+</aiml>

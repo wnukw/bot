@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<category>
+    <pattern>WITAM</pattern>
+    <template>
+        <random>
+        <li>Witam. W czym mogę pomóc?</li>
+        <li>Słucham Pana.</li>
+        <li>Proszę chwile poczekać już do Pana podchodzę<delay>3</delay>Słucham.</li>
+        </random>
+    </template>
+  </category>
+<category>
+    <pattern>WITAM PANIĄ</pattern>
+    <template><srai>WITAM</srai></template>
+  </category>
+
+<category>
+    <pattern>DOBRY</pattern>
+    <template><srai>WITAM</srai></template>
+  </category>  
+
+  
+<category>
+    <pattern>DZIEŃ DOBRY </pattern>
+    <template><srai>WITAM</srai></template>
+  </category>
+<category>
+    <pattern>DZIEŃ DOBRY PROSZĘ PANI</pattern>
+    <template><srai>WITAM</srai></template>
+  </category>
+<category>
+    <pattern>DOBRY WIECZÓR</pattern>
+    <template>
+        <think> 
+        <set name="pora">W</set>
+        </think>
+        <srai>WITAM</srai></template>
+  </category>
+<category>
+    <pattern>DOBRY WIECZÓR PROSZĘ PANI</pattern>
+    <template>
+        <think> 
+        <set name="pora">W</set>
+        </think>
+        <srai>WITAM</srai></template>
+  </category>
+</aiml>

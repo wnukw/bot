@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+	<category>
+    <pattern>* <set>s1</set></pattern>
+    <template>
+        <think> 
+            <set name="godzina"><star index="2"/></set>  
+    </think>
+        <condition name="set1">
+            <li value="1">
+                <condition name="ilosc" >
+                    <li value="bilety">Ile biletów chciałby Pan kupić?</li>
+                    <li value="bilet">Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+                    <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
+                </condition></li>
+            <li>Ten pociąg nie odjeżdza o tej godzinie.</li>
+        </condition>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>* <set>s2</set></pattern>
+    <template>
+        <think> 
+            <set name="godzina"><star index="2"/></set>  
+    </think>
+        <condition name="set1">
+            <li value="2">
+                <condition name="ilosc" >
+                    <li value="bilety">Ile biletów chciałby Pan kupić?</li>
+                    <li value="bilet">Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+                    <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
+                </condition></li>
+            <li>Ten pociąg nie odjeżdza o tej godzinie.</li>
+        </condition>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>* <set>s3</set></pattern>
+    <template>
+        <think> 
+            <set name="godzina"><star index="2"/></set>  
+    </think>
+        <condition name="set1">
+            <li value="3">
+                <condition name="ilosc" >
+                    <li value="bilety">Ile biletów chciałby Pan kupić?</li>
+                    <li value="bilet">Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+                    <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
+                </condition></li>
+            <li>Ten pociąg nie odjeżdza o tej godzinie.</li> </condition>
+    </template>
+  </category>
+  
+    
+  <category>
+    <pattern>* <set>s4</set></pattern>
+    <template>
+        <think> 
+            <set name="godzina"><star index="2"/></set>  
+    </think>
+        <condition name="set1">
+            <li value="4">
+                <condition name="ilosc" >
+                    <li value="bilety">Ile biletów chciałby Pan kupić?</li>
+                    <li value="bilet">Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+                    <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
+                </condition></li>
+            <li>Ten pociąg nie odjeżdza o tej godzinie.</li> </condition>
+    </template>
+  </category>
+  
+  	<category>
+    <pattern>* <set>s8</set></pattern>
+    <template>
+        <think> 
+            <set name="godzina"><star index="2"/></set>  
+    </think>
+        <condition name="set1">
+            <li value="8">
+                <condition name="ilosc" >
+                    <li value="bilety">Ile biletów chciałby Pan kupić?</li>
+                    <li value="bilet">Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+                    <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
+                </condition></li>
+            <li>Ten pociąg nie odjeżdza o tej godzinie.</li>
+        </condition>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>* <set>s9</set></pattern>
+    <template>
+        <think> 
+            <set name="godzina"><star index="2"/></set>  
+    </think>
+        <condition name="set1">
+            <li value="9">
+                <condition name="ilosc" >
+                    <li value="bilety">Ile biletów chciałby Pan kupić?</li>
+                    <li value="bilet">Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+                    <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
+                </condition></li>
+            <li>Ten pociąg nie odjeżdza o tej godzinie.</li>
+        </condition>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>* <set>s10</set></pattern>
+    <template>
+        <think> 
+            <set name="godzina"><star index="2"/></set>  
+    </think>
+        <condition name="set1">
+            <li value="10">
+                <condition name="ilosc" >
+                    <li value="bilety">Ile biletów chciałby Pan kupić?</li>
+                    <li value="bilet">Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+                    <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
+                </condition></li>
+            <li>Ten pociąg nie odjeżdza o tej godzinie.</li> </condition>
+    </template>
+  </category>
+  
+    
+  <category>
+    <pattern>* <set>s11</set></pattern>
+    <template>
+        <think> 
+            <set name="godzina"><star index="2"/></set>  
+    </think>
+        <condition name="set1">
+            <li value="11">
+                <condition name="ilosc" >
+                    <li value="bilety">Ile biletów chciałby Pan kupić?</li>
+                    <li value="bilet">Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+                    <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
+                </condition></li>
+            <li>Ten pociąg nie odjeżdza o tej godzinie.</li> </condition>
+    </template>
+  </category>
+  
+  
+  
+ 
+  
+ 
+  
+</aiml>

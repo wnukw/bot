@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<!-- BILET  -->    
+    <category>
+    <pattern>* <set>jedenbilet</set></pattern>
+    <template>Dobrze. Dokąd?
+        <think> <set name="ilosc"><star index ="2"/></set></think>
+        </template>
+  </category>
+  
+    <category>
+    <pattern>* <set>jedenbilet</set> do *</pattern>
+    <template>Dobrze. 
+        <think> 
+            <set name="ilosc"><star index="2"/></set>  
+            <set name="miasto"><star index="3" /></set>
+        </think>
+        <delay>2</delay>O której godzinie chciałby Pan wyjechać? Pociąg do <get name="miasto"/> odjeżdża o  
+        <random>
+            <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
+            <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
+            <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
+            <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
+        </random>
+        
+        </template>
+  </category>
+  	
+    <category>
+    <pattern>* <set>jedenbilet</set> <set>rodzajbiletu</set> do *</pattern>
+    <template> 
+        <think> 
+            <set name="ilosc"><star index="2"/></set>  
+            <set name="rodzaj"><star index="3" /></set>
+            <set name="miasto"><star index="4" /></set>
+        </think>
+            Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
+                </random> O której godzinie chciałby Pan wyjechać? 
+    </template>
+  </category>
+  
+    <category>
+    <pattern>* <set>jedenbilet</set><set>rodzajbiletu</set></pattern>
+    <template>Dobrze. Dokąd?
+        <think> 
+        <set name="ilosc"><star index="2"/></set>
+        <set name="rodzaj"><star index="3"/></set>
+        </think>
+        </template>
+  </category>
+
+<!-- DOBRY WIECZÓR BILET -->
+    <category>
+    <pattern>DOBRY WIECZÓR * <set>jedenbilet</set></pattern>
+    <template>Dokąd?
+        <think> 
+            <set name="ilosc"><star index="2"/></set>
+            <set name="pora">W</set>
+        </think>
+        </template>
+  </category>
+  
+    <category>
+    <pattern>DOBRY WIECZÓR * <set>jedenbilet</set> do *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star index="2"/></set>  
+            <set name="miasto"><star index="3" /></set>
+        </think>
+        Pociąg do <get name="miasto"/> odjeżdża o  
+            <random>
+                <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
+                <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
+                <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
+                <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
+             </random> O której godzinie chciałby Pan wyjechać? 
+        </template>
+  </category>
+  	
+    <category>
+    <pattern>DOBRY WIECZÓR * <set>jedenbilet</set> <set>rodzajbiletu</set> do *</pattern>
+    <template> 
+        <think> 
+            <set name="ilosc"><star index="2"/></set>  
+            <set name="rodzaj"><star index="3" /></set>
+            <set name="miasto"><star index="4" /></set>
+        </think>
+            Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
+                <random>
+                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
+                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
+                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
+                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
+                </random> O której godzinie chciałby Pan wyjechać? 
+    </template>
+  </category>
+  
+    <category>
+    <pattern>DOBRY WIECZÓR * <set>jedenbilet</set><set>rodzajbiletu</set></pattern>
+    <template>Dobrze. Dokąd?
+        <think> 
+        <set name="pora">W</set>
+        <set name="ilosc"><star index="2"/></set>
+        <set name="rodzaj"><star index="3"/></set>
+        </think>
+        </template>
+  </category>    
+  
+</aiml>
