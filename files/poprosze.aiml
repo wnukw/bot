@@ -5,7 +5,7 @@
     <pattern>* <set>jedenbilet</set></pattern>
     <template>
         <think> <set name="ilosc"><star index ="2"/></set>
-        <set name="hour"><date timezone="+1" format="%H"/></set>
+        <set name="hour"><date timezone="+10" format="%H"/></set>
         </think>
         <condition name="miasto">
          <li value="unknown">
