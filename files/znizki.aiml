@@ -3,742 +3,721 @@
 	<category>
     <pattern>TAK</pattern>
     <template>
-        <condition name="ilosc" >
-        <li value="bilety">Jaka?</li>
-        <li value="bilet">Jaka?</li>
-        <li value="1 bilet">Jaka?</li>
-        <li value="jeden bilet">Jaka?</li>
-        <li value="1">Jaka?</li>
-        <li value="jeden">Jaka?</li>
-        <li>Jakie?</li>
-        </condition></template>
+        
+        <condition name="znizka">
+            <li value="T">
+                Dobrze.<delay>1</delay> Ze zniżką to bedzie 
+            <condition name="ilosc">
+                <li value="1">
+                <random>
+                  <li> 60</li><li> 86</li><li> 45</li><li> 99</li><li> 70</li><li> 50</li>
+                </random> 
+            </li>
+            <li value="1 bilet">
+                <random>
+                    <li> 60</li><li> 86</li><li> 45</li><li> 99</li><li> 70</li><li> 50</li>
+                </random> 
+            </li>
+            <li value="jeden">
+                <random>
+                    <li> 60</li><li> 86</li><li> 45</li><li> 99</li><li> 70</li><li> 50</li>
+                </random> </li>
+            <li value="jeden bilet">
+                <random>
+                    <li> 60</li><li> 86</li><li> 45</li><li> 99</li><li> 70</li><li> 50</li>
+                </random> 
+            </li>
+            <li value="bilet">
+                <random>
+                    <li> 60</li><li> 86</li><li> 45</li><li> 99</li><li> 70</li><li> 50</li>
+                </random> 
+            </li>
+                <li value="2">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="2 bilety">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="dwa">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> </li>
+            <li value="dwa bilety">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="3 bilety">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random> </li>
+            <li value="trzy">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random></li>
+            <li value="trzy bilety">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random></li>
+            <li value="3 bilety">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random></li>
+            <li value="4">
+                <random>
+                    <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li>
+            <li value="4 bilety">
+                <random>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li>
+            <li value="cztery">
+                <random>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li>    
+            <li value="cztery bilety">
+                <random>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li> 
+            </condition> złotych. Będzie kartą czy gotówką?
+            </li>
+            <li>
+                <condition name="ilosc" >
+                <li value="bilety"><think><set name="znizka">T</set></think>Jaka?</li>
+                <li value="bilet"><think><set name="znizka">T</set></think>Jaka?</li>
+                <li value="1 bilet"><think><set name="znizka">T</set></think>Jaka?</li>
+                <li value="jeden bilet"><think><set name="znizka">T</set></think>Jaka?</li>
+                <li value="1"><think><set name="znizka">T</set></think>Jaka?</li>
+                <li value="jeden"><think><set name="znizka">T</set></think>Jaka?</li>
+                <li><think><set name="znizka">T</set></think>Jakie?</li>
+                </condition>
+            </li>
+        </condition>
+        </template>
+  </category>
+  
+  <category>
+    <pattern>TO NIECH BĘDZIE 2</pattern>
+    <template>
+        <srai>TAK</srai>
+        </template>
+  </category>
+  
+  <category>
+    <pattern>TO NIECH BĘDZIE DRUGA</pattern>
+    <template>
+        <srai>TAK</srai>
+        </template>
+  </category>
+  
+  <category>
+    <pattern>NIECH BĘDZIE DRUGA</pattern>
+    <template>
+        <srai>TAK</srai>
+        </template>
+  </category>
+  
+  <category>
+    <pattern>NIECH BĘDZIE 2</pattern>
+    <template>
+        <srai>TAK</srai>
+        </template>
+  </category>
+  
+  
+  <category>
+    <pattern>TO NIECH BĘDZIE 2 *</pattern>
+    <template>
+        <srai>TAK</srai>
+        </template>
+  </category>
+  
+   <category>
+    <pattern>* TO NIECH BĘDZIE 2 *</pattern>
+    <template>
+        <srai>TAK</srai>
+        </template>
+  </category>
+  
+   <category>
+    <pattern>* TO NIECH BĘDZIE 2</pattern>
+    <template>
+        <srai>TAK</srai>
+        </template>
+  </category>
+  
+  <category>
+    <pattern>TO NIECH BĘDZIE DRUGA</pattern>
+    <template>
+        <srai>TAK</srai>
+        </template>
+  </category>
+  
+  <category>
+    <pattern>* TO NIECH BĘDZIE DRUGA</pattern>
+    <template>
+        <srai>TAK</srai>
+        </template>
+  </category>
+  
+  <category>
+    <pattern>TO NIECH BĘDZIE DRUGA *</pattern>
+    <template>
+        <srai>TAK</srai>
+        </template>
+  </category>
+  
+  <category>
+    <pattern>* TO NIECH BĘDZIE DRUGA *</pattern>
+    <template>
+        <srai>TAK</srai>
+        </template>
+  </category>
+  
+  <category>
+    <pattern>NIECH BĘDZIE DRUGA</pattern>
+    <template>
+        <srai>TAK</srai>
+        </template>
+  </category>
+  
+  <category>
+    <pattern>* NIECH BĘDZIE DRUGA</pattern>
+    <template>
+        <srai>TAK</srai>
+        </template>
+  </category>
+  
+  <category>
+    <pattern>NIECH BĘDZIE DRUGA *</pattern>
+    <template>
+        <srai>TAK</srai>
+        </template>
+  </category>
+  
+  <category>
+    <pattern>* NIECH BĘDZIE DRUGA *</pattern>
+    <template>
+        <srai>TAK</srai>
+        </template>
+  </category>
+  
+  <category>
+    <pattern>NIECH BĘDZIE 2</pattern>
+    <template>
+        <srai>TAK</srai>
+        </template>
+  </category>
+  
+  
+  <category>
+    <pattern>* NIECH BĘDZIE 2</pattern>
+    <template>
+        <srai>TAK</srai>
+        </template>
+  </category>
+  
+  <category>
+    <pattern>NIECH BĘDZIE 2 *</pattern>
+    <template>
+        <srai>TAK</srai>
+        </template>
+  </category>
+  
+  <category>
+    <pattern>* NIECH BĘDZIE 2* </pattern>
+    <template>
+        <srai>TAK</srai>
+        </template>
+  </category>
+  
+  
+  <category>
+    <pattern>TAK, *</pattern>
+    <template>
+        <srai>TAK</srai>
+        </template>
+  </category>
+
+ <category>
+    <pattern>NIE, *</pattern>
+    <template>
+       <srai>NIE</srai>
+         </template>
   </category>
 
   <category>
     <pattern>NIE</pattern>
-    <template>Dobrze. Podsumowując <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>. To będzie   
+    <template>
+        
+        <condition name="znizka">
+            <li value="N">
+                Dobrze. Podsumowując <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>. To będzie  
+            <condition name="ilosc">
+            <li value="1">
+                <random>
+                  <li> 60</li><li> 86</li><li> 45</li><li> 99</li><li> 70</li><li> 50</li>
+                </random> 
+            </li>
+            <li value="1 bilet">
+                <random>
+                    <li> 60</li><li> 86</li><li> 45</li><li> 99</li><li> 70</li><li> 50</li>
+                </random> 
+            </li>
+            <li value="jeden">
+                <random>
+                    <li> 60</li><li> 86</li><li> 45</li><li> 99</li><li> 70</li><li> 50</li>
+                </random> </li>
+            <li value="jeden bilet">
+                <random>
+                    <li> 60</li><li> 86</li><li> 45</li><li> 99</li><li> 70</li><li> 50</li>
+                </random> 
+            </li>
+            <li value="bilet">
+                <random>
+                    <li> 60</li><li> 86</li><li> 45</li><li> 99</li><li> 70</li><li> 50</li>
+                </random> 
+            </li>
+            <li value="2 bilety">
+                <random>
+                    <li> 120</li><li> 170</li><li> 80</li><li> 198</li><li> 148</li><li> 100</li>
+                </random> </li>
+            <li value="dwa">
+                <random>
+                    <li> 120</li><li> 170</li><li> 80</li><li> 198</li><li> 148</li><li> 100</li>
+                </random></li>
+            <li value="dwa bilety">
+                <random>
+                    <li> 120</li><li> 170</li><li> 80</li><li> 198</li><li> 148</li><li> 100</li>
+                </random></li>
+            <li value="2 bilety">
+                <random>
+                    <li> 120</li><li> 170</li><li> 80</li><li> 198</li><li> 148</li><li> 100</li>
+                </random></li>
+            <li value="3">
+                <random>
+                    <li> 180</li><li> 258</li><li> 126</li><li> 297</li><li> 220</li><li> 150</li>
+                </random> </li>
+            <li value="3 bilety">
+                <random>
+                    <li> 180</li><li> 258</li><li> 126</li><li> 297</li><li> 220</li><li> 150</li>
+                </random> </li>
+            <li value="trzy">
+                <random>
+                    <li> 180</li><li> 258</li><li> 126</li><li> 297</li><li> 220</li><li> 150</li>
+                </random> </li>    
+            <li value="trzy bilety">
+                <random>
+                    <li> 180</li><li> 258</li><li> 126</li><li> 297</li><li> 220</li><li> 150</li>
+                </random> </li> 
+            <li value="cztery">
+                <random>
+                    <li> 240</li><li> 340</li><li> 168</li><li> 396</li><li> 398</li><li> 200</li>
+                </random> </li> 
+            <li value="cztery bilety">
+                <random>
+                    <li> 240</li><li> 340</li><li> 168</li><li> 396</li><li> 398</li><li> 200</li>
+                </random> </li> 
+            <li value="4 bilety">
+                <random>
+                    <li> 240</li><li> 340</li><li> 168</li><li> 396</li><li> 398</li><li> 200</li>
+                </random> </li> 
+            <li value="4">
+                <random>
+                    <li> 240</li><li> 340</li><li> 168</li><li> 396</li><li> 398</li><li> 200</li>
+                </random> </li> 
+    </condition> złotych.  Będzie kartą czy gotówką?</li>
+            <li> Dobrze. Podsumowując <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>. To będzie   
      <condition name="klasa">
         <li value="1"> <condition name="ilosc">
             <li value="1">
                 <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
+                  <li> 60</li><li> 86</li><li> 45</li><li> 99</li><li> 70</li><li> 50</li>
                 </random> 
             </li>
             <li value="1 bilet">
                 <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
+                    <li> 60</li><li> 86</li><li> 45</li><li> 99</li><li> 70</li><li> 50</li>
                 </random> 
             </li>
             <li value="jeden">
                 <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
+                    <li> 60</li><li> 86</li><li> 45</li><li> 99</li><li> 70</li><li> 50</li>
                 </random> </li>
             <li value="jeden bilet">
                 <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
+                    <li> 60</li><li> 86</li><li> 45</li><li> 99</li><li> 70</li><li> 50</li>
                 </random> 
             </li>
             <li value="bilet">
                 <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
+                    <li> 60</li><li> 86</li><li> 45</li><li> 99</li><li> 70</li><li> 50</li>
                 </random> 
             </li>
             <li value="2 bilety">
                 <random>
-                    <li> 120</li>
-                    <li> 172</li>
-                    <li> 84</li>
-                    <li> 198</li>
-                    <li> 148</li>
-                    <li> 100</li>
+                    <li> 120</li><li> 170</li><li> 80</li><li> 198</li><li> 148</li><li> 100</li>
                 </random> </li>
             <li value="dwa">
                 <random>
-                    <li> 120</li>
-                    <li> 172</li>
-                    <li> 84</li>
-                    <li> 198</li>
-                    <li> 148</li>
-                    <li> 100</li>
+                    <li> 120</li><li> 170</li><li> 80</li><li> 198</li><li> 148</li><li> 100</li>
                 </random></li>
             <li value="dwa bilety">
                 <random>
-                    <li> 120</li>
-                    <li> 172</li>
-                    <li> 84</li>
-                    <li> 198</li>
-                    <li> 148</li>
-                    <li> 100</li>
+                    <li> 120</li><li> 170</li><li> 80</li><li> 198</li><li> 148</li><li> 100</li>
                 </random></li>
             <li value="2 bilety">
                 <random>
-                    <li> 120</li>
-                    <li> 172</li>
-                    <li> 84</li>
-                    <li> 198</li>
-                    <li> 148</li>
-                    <li> 100</li>
+                    <li> 120</li><li> 170</li><li> 80</li><li> 198</li><li> 148</li><li> 100</li>
                 </random></li>
             <li value="3">
                 <random>
-                    <li> 180</li>
-                    <li> 258</li>
-                    <li> 126</li>
-                    <li> 297</li>
-                    <li> 222</li>
-                    <li> 150</li>
+                    <li> 180</li><li> 258</li><li> 126</li><li> 297</li><li> 220</li><li> 150</li>
                 </random> </li>
             <li value="3 bilety">
                 <random>
-                    <li> 180</li>
-                    <li> 258</li>
-                    <li> 126</li>
-                    <li> 297</li>
-                    <li> 222</li>
-                    <li> 150</li>
+                    <li> 180</li><li> 258</li><li> 126</li><li> 297</li><li> 220</li><li> 150</li>
                 </random> </li>
             <li value="trzy">
                 <random>
-                    <li> 180</li>
-                    <li> 258</li>
-                    <li> 126</li>
-                    <li> 297</li>
-                    <li> 222</li>
-                    <li> 150</li>
+                    <li> 180</li><li> 258</li><li> 126</li><li> 297</li><li> 220</li><li> 150</li>
                 </random> </li>    
             <li value="trzy bilety">
                 <random>
-                    <li> 180</li>
-                    <li> 258</li>
-                    <li> 126</li>
-                    <li> 297</li>
-                    <li> 222</li>
-                    <li> 150</li>
+                    <li> 180</li><li> 258</li><li> 126</li><li> 297</li><li> 220</li><li> 150</li>
                 </random> </li> 
             <li value="cztery">
                 <random>
-                    <li> 240</li>
-                    <li> 344</li>
-                    <li> 168</li>
-                    <li> 396</li>
-                    <li> 396</li>
-                    <li> 200</li>
+                    <li> 240</li><li> 340</li><li> 168</li><li> 396</li><li> 398</li><li> 200</li>
                 </random> </li> 
             <li value="cztery bilety">
                 <random>
-                    <li> 240</li>
-                    <li> 344</li>
-                    <li> 168</li>
-                    <li> 396</li>
-                    <li> 396</li>
-                    <li> 200</li>
+                    <li> 240</li><li> 340</li><li> 168</li><li> 396</li><li> 398</li><li> 200</li>
                 </random> </li> 
             <li value="4 bilety">
                 <random>
-                    <li> 240</li>
-                    <li> 344</li>
-                    <li> 168</li>
-                    <li> 396</li>
-                    <li> 396</li>
-                    <li> 200</li>
+                    <li> 240</li><li> 340</li><li> 168</li><li> 396</li><li> 398</li><li> 200</li>
                 </random> </li> 
             <li value="4">
                 <random>
-                    <li> 240</li>
-                    <li> 344</li>
-                    <li> 168</li>
-                    <li> 396</li>
-                    <li> 396</li>
-                    <li> 200</li>
+                    <li> 240</li><li> 340</li><li> 168</li><li> 396</li><li> 398</li><li> 200</li>
                 </random> </li> 
-    </condition> złotych</li>
+    </condition> złotych.  Będzie kartą czy gotówką?</li>
     <li value="2"> <condition name="ilosc">
             <li value="1">
                 <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
+                     <li> 40</li><li> 66</li><li> 20</li><li> 79</li><li> 45</li><li> 30</li>
                 </random> 
             </li>
             <li value="1 bilet">
                 <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
+                     <li> 40</li><li> 66</li><li> 20</li><li> 79</li><li> 45</li><li> 30</li>
                 </random> 
             </li>
             <li value="jeden">
                 <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
+                    <li> 40</li><li> 66</li><li> 20</li><li> 79</li><li> 45</li><li> 30</li>
                 </random> </li>
             <li value="jeden bilet">
                 <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
+                    <li> 40</li><li> 66</li><li> 20</li><li> 79</li><li> 45</li><li> 30</li>
                 </random> 
             </li>
             <li value="bilet">
                 <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
+                    <li> 40</li><li> 66</li><li> 20</li><li> 79</li><li> 45</li><li> 30</li>
                 </random> 
             </li>
             <li value="2 bilety">
                 <random>
-                    <li> 80</li>
-                    <li> 130</li>
-                    <li> 45</li>
-                    <li> 110</li>
-                    <li> 100</li>
-                    <li> 76</li>
+                    <li> 80</li><li> 130</li><li> 45</li><li> 110</li><li> 100</li><li> 76</li>
                 </random> </li>
             <li value="dwa">
                 <random>
-                    <li> 80</li>
-                    <li> 130</li>
-                    <li> 45</li>
-                    <li> 110</li>
-                    <li> 100</li>
-                    <li> 76</li>
+                    <li> 80</li> <li> 130</li><li> 45</li><li> 110</li><li> 100</li><li> 76</li>
                 </random></li>
             <li value="dwa bilety">
                 <random>
-                    <li> 80</li>
-                    <li> 130</li>
-                    <li> 45</li>
-                    <li> 110</li>
-                    <li> 100</li>
-                    <li> 76</li>
+                    <li> 80</li><li> 130</li><li> 45</li><li> 110</li><li> 100</li><li> 76</li>
                 </random></li>
             <li value="2 bilety">
                 <random>
-                    <li> 80</li>
-                    <li> 130</li>
-                    <li> 45</li>
-                    <li> 110</li>
-                    <li> 100</li>
-                    <li> 76</li>
+                    <li> 80</li><li> 130</li><li> 45</li><li> 110</li><li> 100</li><li> 76</li>
                 </random></li>
             <li value="3">
                 <random>
-                    <li> 140</li>
-                    <li> 212</li>
-                    <li> 100</li>
-                    <li> 242</li>
-                    <li> 174</li>
-                    <li> 150</li>
+                    <li> 140</li><li> 210</li><li> 100</li><li> 240</li><li> 170</li><li> 150</li>
                 </random> </li>
             <li value="3 bilety">
                 <random>
-                    <li> 140</li>
-                    <li> 212</li>
-                    <li> 100</li>
-                    <li> 242</li>
-                    <li> 174</li>
-                    <li> 150</li>
+                    <li> 140</li><li> 210</li><li> 100</li><li> 240</li><li> 170</li><li> 150</li>
                 </random> </li>
             <li value="trzy">
                 <random>
-                    <li> 140</li>
-                    <li> 212</li>
-                    <li> 100</li>
-                    <li> 242</li>
-                    <li> 174</li>
-                    <li> 150</li>
+                    <li> 140</li><li> 210</li><li> 100</li><li> 240</li><li> 170</li><li> 150</li>
                 </random> </li>    
             <li value="trzy bilety">
                 <random>
-                    <li> 140</li>
-                    <li> 212</li>
-                    <li> 100</li>
-                    <li> 242</li>
-                    <li> 174</li>
-                    <li> 150</li>
+                    <li> 140</li><li> 210</li><li> 100</li><li> 240</li><li> 170</li><li> 150</li>
                 </random> </li> 
             <li value="cztery">
                 <random>
-                    <li> 211</li>
-                    <li> 321</li>
-                    <li> 174</li>
-                    <li> 353</li>
-                    <li> 300</li>
-                    <li> 225</li>
+                    <li> 211</li><li> 321</li><li> 174</li><li> 355</li> <li> 300</li><li> 225</li>
                 </random> </li> 
             <li value="cztery bilety">
                 <random>
-                    <li> 211</li>
-                    <li> 321</li>
-                    <li> 174</li>
-                    <li> 353</li>
-                    <li> 300</li>
-                    <li> 225</li>
+                    <li> 211</li><li> 321</li><li> 175</li><li> 357</li><li> 300</li><li> 225</li>
                 </random> </li> 
             <li value="4 bilety">
                 <random>
-                    <li> 211</li>
-                    <li> 321</li>
-                    <li> 174</li>
-                    <li> 353</li>
-                    <li> 300</li>
-                    <li> 225</li>
+                    <li> 211</li><li> 321</li><li> 175</li><li> 350</li><li> 300</li><li> 225</li>
                 </random> </li> 
             <li value="4">
                 <random>
-                    <li> 211</li>
-                    <li> 321</li>
-                    <li> 174</li>
-                    <li> 353</li>
-                    <li> 300</li>
-                    <li> 225</li>
+                    <li> 211</li><li> 321</li><li> 175</li><li> 350</li><li> 300</li><li> 225</li>
                 </random> </li> 
-    </condition> złotych</li>
+    </condition> złotych.  Będzie kartą czy gotówką?</li>
+     </condition>
+    </li>
         </condition>
+        
+       
          </template>
   </category>
   
   <category>
-    <pattern>TAK, * STUDENCKIE</pattern>
+    <pattern>TAK, _ STUDENCKIE</pattern>
     <template>
-    <condition name="klasa">
-            <li value="1">Niestety zniżka studencka nie obowiązuje w wagonach 1 klasy.</li>
-            <li value="2">Dobrze.<delay>1</delay> Ze zniżką to bedzie 
-            <condition name="ilosc">
-                <li value="2">
-                <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
-                </random> 
-            </li>
-            <li value="2 bilet">
-                <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
-                </random> 
-            </li>
-            <li value="dwa">
-                <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
-                </random> </li>
-            <li value="dwa bilet">
-                <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
-                </random> 
-            </li>
-            <li value="3 bilety">
-                <random>
-                    <li> 80</li>
-                    <li> 100</li>
-                    <li> 45</li>
-                    <li> 110</li>
-                    <li> 88</li>
-                    <li> 76</li>
-                </random> </li>
-            <li value="trzy">
-                <random>
-                    <li> 80</li>
-                    <li> 110</li>
-                    <li> 45</li>
-                    <li> 810</li>
-                    <li> 94</li>
-                    <li> 76</li>
-                </random></li>
-            <li value="trzy bilety">
-                <random>
-                    <li> 80</li>
-                    <li> 112</li>
-                    <li> 45</li>
-                    <li> 93</li>
-                    <li> 88</li>
-                    <li> 76</li>
-                </random></li>
-            <li value="3 bilety">
-                <random>
-                    <li> 80</li>
-                    <li> 100</li>
-                    <li> 45</li>
-                    <li> 110</li>
-                    <li> 71</li>
-                    <li> 76</li>
-                </random></li>
-            <li value="4">
-                <random>
-                    <li> 140</li>
-                    <li> 100</li>
-                    <li> 112</li>
-                    <li> 83</li>
-                    <li> 140</li>
-                    <li> 102</li>
-                </random> </li>
-            <li value="4 bilety">
-                <random>
-                    <li> 140</li>
-                    <li> 100</li>
-                    <li> 112</li>
-                    <li> 83</li>
-                    <li> 140</li>
-                    <li> 102</li>
-                </random> </li>
-            <li value="cztery">
-                <random>
-                    <li> 140</li>
-                    <li> 100</li>
-                    <li> 112</li>
-                    <li> 83</li>
-                    <li> 140</li>
-                    <li> 102</li>
-                </random> </li>    
-            <li value="cztery bilety">
-                <random>
-                    <li> 140</li>
-                    <li> 100</li>
-                    <li> 112</li>
-                    <li> 83</li>
-                    <li> 140</li>
-                    <li> 102</li>
-                </random> </li> 
-            </condition>złotych</li>
-        </condition>
+    <srai>TAK, STUDENCKIE</srai>
     </template>
   </category>
   
-   <category>
+  
+  <category>
     <pattern>TAK, STUDENCKIE</pattern>
     <template>
     <condition name="klasa">
-            <li value="1">Niestety zniżka studencka nie obowiązuje w wagonach 1 klasy.</li>
+            <li value="1"><think><set name="znizka">T</set></think>Niestety zniżka studencka nie obowiązuje w wagonach 1 klasy. 
+            <random>
+                <li>Chciałby Pan zmienić wagon na 2 klasę?</li>
+                <li>Może chciałby Pan zmienić wagon na 2 klasę?</li>
+                <li>W drugiej klasie zniżka obowiązuje. Może chciałby Pan zmienić wagon?</li>
+            </random></li>
             <li value="2">Dobrze.<delay>1</delay> Ze zniżką to bedzie 
             <condition name="ilosc">
                 <li value="2">
                 <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
                 </random> 
             </li>
-            <li value="2 bilet">
+            <li value="2 bilety">
                 <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
                 </random> 
             </li>
             <li value="dwa">
                 <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
                 </random> </li>
-            <li value="dwa bilet">
+            <li value="dwa bilety">
                 <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
                 </random> 
             </li>
             <li value="3 bilety">
                 <random>
-                    <li> 80</li>
-                    <li> 100</li>
-                    <li> 45</li>
-                    <li> 110</li>
-                    <li> 88</li>
-                    <li> 76</li>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
                 </random> </li>
             <li value="trzy">
                 <random>
-                    <li> 80</li>
-                    <li> 110</li>
-                    <li> 45</li>
-                    <li> 810</li>
-                    <li> 94</li>
-                    <li> 76</li>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
                 </random></li>
             <li value="trzy bilety">
                 <random>
-                    <li> 80</li>
-                    <li> 112</li>
-                    <li> 45</li>
-                    <li> 93</li>
-                    <li> 88</li>
-                    <li> 76</li>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
                 </random></li>
             <li value="3 bilety">
                 <random>
-                    <li> 80</li>
-                    <li> 100</li>
-                    <li> 45</li>
-                    <li> 110</li>
-                    <li> 71</li>
-                    <li> 76</li>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
                 </random></li>
             <li value="4">
                 <random>
-                    <li> 140</li>
-                    <li> 100</li>
-                    <li> 112</li>
-                    <li> 83</li>
-                    <li> 140</li>
-                    <li> 102</li>
+                    <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
                 </random> </li>
             <li value="4 bilety">
                 <random>
-                    <li> 140</li>
-                    <li> 100</li>
-                    <li> 112</li>
-                    <li> 83</li>
-                    <li> 140</li>
-                    <li> 102</li>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
                 </random> </li>
             <li value="cztery">
                 <random>
-                    <li> 140</li>
-                    <li> 100</li>
-                    <li> 112</li>
-                    <li> 83</li>
-                    <li> 140</li>
-                    <li> 102</li>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
                 </random> </li>    
             <li value="cztery bilety">
                 <random>
-                    <li> 140</li>
-                    <li> 100</li>
-                    <li> 112</li>
-                    <li> 83</li>
-                    <li> 140</li>
-                    <li> 102</li>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
                 </random> </li> 
-            </condition>złotychzłotych</li>
-        </condition>
-    </template>
-  </category>
-  
-  <category>
-    <pattern>TAK, * STUDENCKA</pattern>
-    <template>
-    <condition name="klasa">
-            <li value="1">Niestety zniżka studencka nie obowiązuje w wagonach 1 klasy.</li>
-            <li value="2">Dobrze.<delay>1</delay>Ze zniżką to bedzie 
-            <condition name="ilosc">
-            <li value="1">
-                <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
-                </random> 
-            </li>
-            <li value="1 bilet">
-                <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
-                </random> 
-            </li>
-            <li value="jeden">
-                <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
-                </random> </li>
-            <li value="jeden bilet">
-                <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
-                </random> 
-            </li>
-            <li value="bilet">
-                <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
-                </random> 
-            </li></condition> złotych</li>
-        </condition>
-    </template>
-  </category>
-  
-   <category>
-    <pattern>TAK STUDENCKA</pattern>
-    <template>
-    <condition name="klasa">
-            <li value="1">Niestety zniżka studencka nie obowiązuje w wagonach 1 klasy.</li>
-            <li value="2">Dobrze.<delay>1</delay>Ze zniżką to bedzie 
-            <condition name="ilosc">
-            <li value="1">
-                <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
-                </random> 
-            </li>
-            <li value="1 bilet">
-                <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
-                </random> 
-            </li>
-            <li value="jeden">
-                <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
-                </random> </li>
-            <li value="jeden bilet">
-                <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
-                </random> 
-            </li>
-            <li value="bilet">
-                <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
-                </random> 
-            </li></condition> złotych</li>
-        </condition>
-    </template>
-  </category>
-  
-  <category>
-    <pattern>TAK STUDENCKIE</pattern>
-    <template>
-    <condition name="klasa">
-            <li value="1">Niestety zniżka studencka nie obowiązuje w wagonach 1 klasy.</li>
-            <li value="2">Dobrze.<delay>1</delay>Ze zniżką to bedzie 
-            <random>
-            <li> 30</li>
-            <li> 43</li>
-            <li> 21</li>
-            <li> 48</li>
-            <li> 37</li>
-            <li> 25</li>
-         </random> złotych</li>
+            </condition>złotych. Będzie kartą czy gotówką?</li>
         </condition>
     </template>
   </category>
   
   <category>
     <pattern>ZNIŻKA STUDENCKA</pattern>
-    <template>
+     <template>
     <condition name="klasa">
-            <li value="1">Niestety zniżka studencka nie obowiązuje w wagonach 1 klasy.</li>
-            <li value="2">Dobrze.<delay>1</delay>Ze zniżką to bedzie 
+            <li value="1"><think><set name="znizka">T</set></think>Niestety zniżka studencka nie obowiązuje w wagonach 1 klasy. 
+            <random>
+                <li>Chciałby Pan zmienić wagon na 2 klasę?</li>
+                <li>Może chciałby Pan zmienić wagon na 2 klasę?</li>
+                <li>W drugiej klasie zniżka obowiązuje. Może chciałby Pan zmienić wagon?</li>
+            </random></li>
+            <li value="2">
+                <condition name="ilosc">
+                <li value="2">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="2 bilety">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="dwa">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> </li>
+            <li value="dwa bilety">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="3 bilety">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random> </li>
+            <li value="trzy">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random></li>
+            <li value="trzy bilety">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random></li>
+            <li value="3 bilety">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random></li>
+            <li value="4">
+                <random>
+                    <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li>
+            <li value="4 bilety">
+                <random>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li>
+            <li value="cztery">
+                <random>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li>    
+            <li value="cztery bilety">
+                <random>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li> 
+            <li>Dobrze.<delay>1</delay>Ze zniżką to bedzie 
             <random>
             <li> 30</li>
-            <li> 43</li>
+            <li> 45</li>
             <li> 21</li>
             <li> 48</li>
             <li> 37</li>
             <li> 25</li>
-         </random> złotych</li>
-        </condition>
+            </random>
+            </li>
+            </condition>złotych. Będzie kartą czy gotówką?</li>
+           </condition>  
+    </template>
+  </category>
+  
+  <category>
+    <pattern>_ ZNIŻKA STUDENCKA</pattern>
+     <template>
+    <condition name="klasa">
+            <li value="1"><think><set name="znizka">T</set></think>Niestety zniżka studencka nie obowiązuje w wagonach 1 klasy. 
+            <random>
+                <li>Chciałby Pan zmienić wagon na 2 klasę?</li>
+                <li>Może chciałby Pan zmienić wagon na 2 klasę?</li>
+                <li>W drugiej klasie zniżka obowiązuje. Może chciałby Pan zmienić wagon?</li>
+            </random></li>
+            <li value="2">
+                <condition name="ilosc">
+                <li value="2">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="2 bilety">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="dwa">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> </li>
+            <li value="dwa bilety">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="3 bilety">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random> </li>
+            <li value="trzy">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random></li>
+            <li value="trzy bilety">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random></li>
+            <li value="3 bilety">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random></li>
+            <li value="4">
+                <random>
+                    <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li>
+            <li value="4 bilety">
+                <random>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li>
+            <li value="cztery">
+                <random>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li>    
+            <li value="cztery bilety">
+                <random>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li> 
+            <li>Dobrze.<delay>1</delay>Ze zniżką to bedzie 
+            <random>
+            <li> 30</li>
+            <li> 45</li>
+            <li> 21</li>
+            <li> 48</li>
+            <li> 37</li>
+            <li> 25</li>
+            </random>
+            </li>
+            </condition>złotych. Będzie kartą czy gotówką?</li>
+           </condition>  
     </template>
   </category>
   
@@ -746,123 +725,344 @@
     <pattern>ZNIŻKI STUDENCKIE</pattern>
     <template>
     <condition name="klasa">
-            <li value="1">Niestety zniżka studencka nie obowiązuje w wagonach 1 klasy.</li>
+            <li value="1"><think><set name="znizka">T</set></think>Niestety zniżka studencka nie obowiązuje w wagonach 1 klasy. 
+            <random>
+                <li>Chciałby Pan zmienić wagon na 2 klasę?</li>
+                <li>Może chciałby Pan zmienić wagon na 2 klasę?</li>
+                <li>W drugiej klasie zniżka obowiązuje. Może chciałby Pan zmienić wagon?</li>
+            </random></li>
             <li value="2">Dobrze.<delay>1</delay> Ze zniżką to bedzie 
             <condition name="ilosc">
                 <li value="2">
                 <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
                 </random> 
             </li>
-            <li value="2 bilet">
+            <li value="2 bilety">
                 <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
                 </random> 
             </li>
             <li value="dwa">
                 <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
                 </random> </li>
-            <li value="dwa bilet">
+            <li value="dwa bilety">
                 <random>
-                    <li> 40</li>
-                    <li> 66</li>
-                    <li> 22</li>
-                    <li> 79</li>
-                    <li> 44</li>
-                    <li> 30</li>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
                 </random> 
             </li>
             <li value="3 bilety">
                 <random>
-                    <li> 80</li>
-                    <li> 100</li>
-                    <li> 45</li>
-                    <li> 110</li>
-                    <li> 88</li>
-                    <li> 76</li>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
                 </random> </li>
             <li value="trzy">
                 <random>
-                    <li> 80</li>
-                    <li> 110</li>
-                    <li> 45</li>
-                    <li> 810</li>
-                    <li> 94</li>
-                    <li> 76</li>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
                 </random></li>
             <li value="trzy bilety">
                 <random>
-                    <li> 80</li>
-                    <li> 112</li>
-                    <li> 45</li>
-                    <li> 93</li>
-                    <li> 88</li>
-                    <li> 76</li>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
                 </random></li>
             <li value="3 bilety">
                 <random>
-                    <li> 80</li>
-                    <li> 100</li>
-                    <li> 45</li>
-                    <li> 110</li>
-                    <li> 71</li>
-                    <li> 76</li>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
                 </random></li>
             <li value="4">
                 <random>
-                    <li> 140</li>
-                    <li> 100</li>
-                    <li> 112</li>
-                    <li> 83</li>
-                    <li> 140</li>
-                    <li> 102</li>
+                    <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
                 </random> </li>
             <li value="4 bilety">
                 <random>
-                    <li> 140</li>
-                    <li> 100</li>
-                    <li> 112</li>
-                    <li> 83</li>
-                    <li> 140</li>
-                    <li> 102</li>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
                 </random> </li>
             <li value="cztery">
                 <random>
-                    <li> 140</li>
-                    <li> 100</li>
-                    <li> 112</li>
-                    <li> 83</li>
-                    <li> 140</li>
-                    <li> 102</li>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
                 </random> </li>    
             <li value="cztery bilety">
                 <random>
-                    <li> 140</li>
-                    <li> 100</li>
-                    <li> 112</li>
-                    <li> 83</li>
-                    <li> 140</li>
-                    <li> 102</li>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
                 </random> </li> 
-            </condition>złotych</li>
+            </condition>złotych. Będzie kartą czy gotówką?</li>
         </condition>
     </template>
   </category>
+ 
+ <category>
+    <pattern>_ ZNIŻKI STUDENCKIE</pattern>
+    <template>
+    <condition name="klasa">
+            <li value="1"><think><set name="znizka">T</set></think>Niestety zniżka studencka nie obowiązuje w wagonach 1 klasy. 
+            <random>
+                <li>Chciałby Pan zmienić wagon na 2 klasę?</li>
+                <li>Może chciałby Pan zmienić wagon na 2 klasę?</li>
+                <li>W drugiej klasie zniżka obowiązuje. Może chciałby Pan zmienić wagon?</li>
+            </random></li>
+            <li value="2">Dobrze.<delay>1</delay> Ze zniżką to bedzie 
+            <condition name="ilosc">
+                <li value="2">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="2 bilety">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="dwa">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> </li>
+            <li value="dwa bilety">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="3 bilety">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random> </li>
+            <li value="trzy">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random></li>
+            <li value="trzy bilety">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random></li>
+            <li value="3 bilety">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random></li>
+            <li value="4">
+                <random>
+                    <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li>
+            <li value="4 bilety">
+                <random>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li>
+            <li value="cztery">
+                <random>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li>    
+            <li value="cztery bilety">
+                <random>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li> 
+            </condition>złotych. Będzie kartą czy gotówką?</li>
+        </condition>
+    </template>
+  </category>
+ 
+ 
+   <category>
+    <pattern>TAK, _ STUDENCKA</pattern>
+    <template>
+    <condition name="klasa">
+            <li value="1"><think><set name="znizka">T</set></think>Niestety zniżka studencka nie obowiązuje w wagonach 1 klasy. 
+            <random>
+                <li>Chciałby Pan zmienić wagon na 2 klasę?</li>
+                <li>Może chciałby Pan zmienić wagon na 2 klasę?</li>
+                <li>W drugiej klasie zniżka obowiązuje. Może chciałby Pan zmienić wagon?</li>
+            </random></li>
+            <li value="2">
+                <condition name="ilosc">
+                <li value="2">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="2 bilety">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="dwa">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> </li>
+            <li value="dwa bilety">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="3 bilety">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random> </li>
+            <li value="trzy">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random></li>
+            <li value="trzy bilety">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random></li>
+            <li value="3 bilety">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random></li>
+            <li value="4">
+                <random>
+                    <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li>
+            <li value="4 bilety">
+                <random>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li>
+            <li value="cztery">
+                <random>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li>    
+            <li value="cztery bilety">
+                <random>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li> 
+            <li>Dobrze.<delay>1</delay>Ze zniżką to bedzie 
+            <random>
+            <li> 30</li>
+            <li> 45</li>
+            <li> 21</li>
+            <li> 48</li>
+            <li> 37</li>
+            <li> 25</li>
+            </random>
+            </li>
+            </condition>złotych. Będzie kartą czy gotówką?</li>
+           </condition>      
+                
+    </template>
+  </category>
+  
+     <category>
+    <pattern>STUDENCKA</pattern>
+    <template>
+    <condition name="klasa">
+            <li value="1"><think><set name="znizka">T</set></think>Niestety zniżka studencka nie obowiązuje w wagonach 1 klasy. 
+            <random>
+                <li>Chciałby Pan zmienić wagon na 2 klasę?</li>
+                <li>Może chciałby Pan zmienić wagon na 2 klasę?</li>
+                <li>W drugiej klasie zniżka obowiązuje. Może chciałby Pan zmienić wagon?</li>
+            </random></li>
+            <li value="2">
+                <condition name="ilosc">
+                <li value="2">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="2 bilety">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="dwa">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> </li>
+            <li value="dwa bilety">
+                <random>
+                    <li> 40</li><li> 66</li><li> 25</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="3 bilety">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random> </li>
+            <li value="trzy">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random></li>
+            <li value="trzy bilety">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random></li>
+            <li value="3 bilety">
+                <random>
+                    <li> 80</li><li> 100</li><li> 45</li><li> 110</li><li> 88</li><li> 76</li>
+                </random></li>
+            <li value="4">
+                <random>
+                    <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li>
+            <li value="4 bilety">
+                <random>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li>
+            <li value="cztery">
+                <random>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li>    
+            <li value="cztery bilety">
+                <random>
+                      <li> 140</li><li> 100</li><li> 112</li><li> 80</li><li> 140</li><li> 105</li>
+                </random> </li> 
+            <li>Dobrze.<delay>1</delay>Ze zniżką to bedzie 
+            <random>
+            <li> 30</li>
+            <li> 45</li>
+            <li> 21</li>
+            <li> 48</li>
+            <li> 37</li>
+            <li> 25</li>
+            </random>
+            </li>
+            </condition>złotych. Będzie kartą czy gotówką?</li>
+           </condition>      
+                
+    </template>
+  </category>
+  
+  
+   <category>
+    <pattern>TAK STUDENCKA</pattern>
+    <template>
+    <condition name="klasa">
+            <li value="1"><think><set name="znizka">T</set></think>Niestety zniżka studencka nie obowiązuje w wagonach 1 klasy. 
+            <random>
+                <li>Chciałby Pan zmienić wagon na 2 klasę?</li>
+                <li>Może chciałby Pan zmienić wagon na 2 klasę?</li>
+                <li>W drugiej klasie zniżka obowiązuje. Może chciałby Pan zmienić wagon?</li>
+            </random></li>
+            <li value="2">Dobrze.<delay>1</delay>Ze zniżką to bedzie 
+            <random>
+            <li> 30</li>
+            <li> 45</li>
+            <li> 21</li>
+            <li> 48</li>
+            <li> 37</li>
+            <li> 25</li>
+         </random> złotych. Wolałby Pan wagon przedziałowy czy bezprzedziałowy? </li>
+        </condition>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>TAK, STUDENCKA</pattern>
+    <template>
+    <condition name="klasa">
+            <li value="1"><think><set name="znizka">T</set></think>Niestety zniżka studencka nie obowiązuje w wagonach 1 klasy. 
+            <random>
+                <li>Chciałby Pan zmienić wagon na 2 klasę?</li>
+                <li>Może chciałby Pan zmienić wagon na 2 klasę?</li>
+                <li>W drugiej klasie zniżka obowiązuje. Może chciałby Pan zmienić wagon?</li>
+            </random></li>
+            <li value="2">Dobrze.<delay>1</delay>Ze zniżką to bedzie 
+            <random>
+            <li> 30</li>
+            <li> 45</li>
+            <li> 21</li>
+            <li> 48</li>
+            <li> 37</li>
+            <li> 25</li>
+         </random> złotych. Będzie kartą czy gotówką?</li>
+        </condition>
+    </template>
+  </category>
+  
+ 
  
 </aiml>

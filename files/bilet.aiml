@@ -1,14 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-  
 
 <!--ile os -->  
     <category>
     <pattern><set>jedenbilet</set></pattern>
     <template>
         <think> 
-            <set name="ilosc"><star /></set>  
-    </think>
+            <set name="ilosc"><star /></set>
+            <set name="hour"><date timezone="+1" format="%H"/></set></think>
+            <condition name="miasto">
+                <li value="unknown">
+                    <condition name="ilosc" >
+                    <li value="bilety">Ile biletów chciałby Pan kupić?</li>
+                    <li value="bilet"><think><set name="liczba">P</set></think>Dobrze.Dokąd?</li>
+                    <li value="1 bilet"><think><set name="liczba">P</set></think>Dobrze.Dokąd?</li>
+                    <li value="jeden bilet"><think><set name="liczba">P</set></think>Dobrze.Dokąd?</li>
+                    <li value="1"><think><set name="liczba">P</set></think>Dobrze.Dokąd?</li>
+                    <li value="jeden"><think><set name="liczba">P</set></think>Dobrze.Dokąd?</li>
+                    <li>Dobrze. Dokąd chcieliby Państwo pojechać?</li>
+                    </condition>
+                </li>
+                <li>
+                    <condition name="ilosc" >
+                    <li value="bilety"> Ile biletów chciałby Pan kupić?</li>
+                    <li value="bilet"><delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+                    <li value="1 bilet"><delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+                    <li value="jeden bilet"><delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+                    <li value="1"><delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+                    <li value="jeden"><delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+                    <li value="bilet">Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+                    <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
+                     </condition>
+                </li>
+            </condition>
+    
+    </template>
+  </category>
+
+
+<category>
+    <pattern>*<set>jedenbilet</set>do * o *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star index="2"/></set>  
+            <set name="miasto"><star index="3" /></set>
+            <set name="godzina"><star index="4" /></set>
+            <set name="hour"><date timezone="+1" format="%H"/></set>
+            </think>
+       <condition name="ilosc" >
+        <li value="bilety">Ile biletów chciałby Pan kupić?</li>
+        <li value="bilet"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li value="1 bilet"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li value="jeden bilet"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li value="1"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li value="jeden"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
+        </condition> 
+    </template>
+  </category>
+  
+<category>
+    <pattern>*<set>jedenbilet</set>o * do *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star index="2"/></set>  
+            <set name="miasto"><star index="4" /></set>
+            <set name="godzina"><star index="3" /></set>
+            <set name="hour"><date timezone="+1" format="%H"/></set>
+            </think>
+       <condition name="ilosc" >
+        <li value="bilety">Ile biletów chciałby Pan kupić?</li>
+        <li value="bilet"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li value="1 bilet"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li value="jeden bilet"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li value="1"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li value="jeden"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
+        </condition> 
+    </template>
+  </category>  
+  
+<category>
+    <pattern>*<set>jedenbilet</set> <set>rodzajbiletu</set> o * do *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star index="2"/></set>  
+            <set name="rodzaj"><star index="3" /></set>
+            <set name="miasto"><star index="5" /></set>
+            <set name="godzina"><star index="4" /></set>
+            <set name="hour"><date timezone="+1" format="%H"/></set>
+            </think>
+       <condition name="ilosc" >
+        <li value="bilety">Ile biletów chciałby Pan kupić?</li>
+        <li value="bilet"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li value="1 bilet"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li value="jeden bilet"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li value="1"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li value="jeden"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
+        </condition> 
+    </template>
+  </category>  
+ 
+<category>
+    <pattern>*<set>jedenbilet</set> <set>rodzajbiletu</set>do * o *</pattern>
+    <template>
+        <think> 
+            <set name="ilosc"><star index="2"/></set>  
+            <set name="rodzaj"><star index="3" /></set>
+            <set name="miasto"><star index="4" /></set>
+            <set name="godzina"><star index="5" /></set>
+            <set name="hour"><date timezone="+1" format="%H"/></set>
+            </think>
+       <condition name="ilosc" >
+        <li value="bilety">Ile biletów chciałby Pan kupić?</li>
+        <li value="bilet"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li value="1 bilet"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li value="jeden bilet"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li value="1"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li value="jeden"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+        <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
+        </condition> 
+    </template>
+  </category>  
+    
+  
+  
+<category>
+    <pattern><set>jedenbilet</set>*</pattern>
+    <template>
+     <think> 
+        <set name="ilosc"><star /></set>
+        <set name="hour"><date timezone="+1" format="%H"/></set></think>
+  
     <condition name="ilosc" >
         <li value="bilety">Ile biletów chciałby Pan kupić?</li>
         <li value="bilet"><think><set name="liczba">P</set></think>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
@@ -21,49 +145,131 @@
     </template>
   </category>
   
-
-  
-   <category>
-    <pattern>TAK</pattern>
-    <template>Jakie?</template>
-  </category>
-  
   <category>
-    <pattern>TAK, * STUDENCKA</pattern>
+    <pattern><set>wiecejbiletow</set></pattern>
     <template>
-    <condition name="klasa">
-            <li value="1">Niestety zniżka studencka nie obowiązuje w wagonach 1 klasy. Może jakaś inna zniżka?</li>
-            <li value="2">Dobrze.<delay>1</delay>Ze zniżką to bedzie 
+        <think> <set name = "nilosc"><star /></set> 
+        <set name="hour"><date timezone="+1" format="%H"/></set>
+        </think>
+        <condition name="nilosc">
+        <li value="ile biletów">
             <random>
-            <li> 30</li>
-            <li> 43</li>
-            <li> 21</li>
-            <li> 48</li>
-            <li> 37</li>
-            <li> 25</li>
-         </random> złotych</li>
+            <li>Maksymalnie mogę sprzedać 4 bilety.</li>
+            <li>Może Pan kupić maksymalnie 4 bilety.</li>
+            </random> 
+        </li>
+        <li>
+            <random>
+            <li>Przepraszam, nie sprzedam Panu takiej ilości biletów.</li>
+            <li>Przepraszam, nie sprzedam Panu <get name="nilosc"/>.</li>
+            <li><get name="nilosc"/> to troche za dużo.</li>
+            <li>Prosze wybaczyć ale mamy za duże obłożenie, żeby sprzedać tyle biletów na raz.</li>
+            <li>Przepraszam, nie sprzedam Panu takiej ilości biletów. Może Pan kupić maksymalnie 4.</li>
+            <li><get name="nilosc"/> to troche za dużo. Mogę Panu sprzedać maksymalnie 4 bilety.</li>
+            <li>Prosze wybaczyć ale mamy za duże obłożenie, żeby sprzedać tyle biletów na raz. Może Pan kupić maksymalnie 4 bilety</li>
+            <li>Może Pan kupić maksymalnie 4.</li>
+            <li>Niestety, mogę Panu sprzedać maksymalnie 4 bilety.</li>
+            <li>Niestety, mogę Panu sprzedać maksymalnie 4 bilety. Mamy za duże obłożenie.</li>
+            </random>
+        </li>
+        </condition>
+    </template>
+  </category>
+
+  <category>
+    <pattern>*<set>wiecejbiletow</set></pattern>
+    <template>
+        <think> <set name = "nilosc"><star index="2" /></set> 
+        <set name="hour"><date timezone="+1" format="%H"/></set>
+        </think>
+        <condition name="nilosc">
+        <li value="ile biletów">
+            <random>
+            <li>Maksymalnie mogę sprzedać 4 bilety.</li>
+            <li>Może Pan kupić maksymalnie 4 bilety.</li>
+            </random> 
+        </li>
+        <li>
+            <random>
+            <li>Przepraszam, nie sprzedam Panu takiej ilości biletów.</li>
+            <li>Przepraszam, nie sprzedam Panu <get name="nilosc"/>.</li>
+            <li><get name="nilosc"/> to troche za dużo.</li>
+            <li>Prosze wybaczyć ale mamy za duże obłożenie, żeby sprzedać tyle biletów na raz.</li>
+            <li>Przepraszam, nie sprzedam Panu takiej ilości biletów. Może Pan kupić maksymalnie 4.</li>
+            <li><get name="nilosc"/> to troche za dużo. Mogę Panu sprzedać maksymalnie 4 bilety.</li>
+            <li>Prosze wybaczyć ale mamy za duże obłożenie, żeby sprzedać tyle biletów na raz. Może Pan kupić maksymalnie 4 bilety</li>
+            <li>Może Pan kupić maksymalnie 4.</li>
+            <li>Niestety, mogę Panu sprzedać maksymalnie 4 bilety.</li>
+            <li>Niestety, mogę Panu sprzedać maksymalnie 4 bilety. Mamy za duże obłożenie.</li>
+            </random>
+        </li>
+        </condition>
+    </template>
+  </category>
+
+  <category>
+    <pattern><set>wiecejbiletow</set>*</pattern>
+    <template>
+        <think> <set name = "nilosc"><star /></set> 
+        <set name="hour"><date timezone="+1" format="%H"/></set>
+        </think>
+        <condition name="nilosc">
+        <li value="ile biletów">
+            <random>
+            <li>Maksymalnie mogę sprzedać 4 bilety.</li>
+            <li>Może Pan kupić maksymalnie 4 bilety.</li>
+            </random> 
+        </li>
+        <li>
+            <random>
+            <li>Przepraszam, nie sprzedam Panu takiej ilości biletów.</li>
+            <li>Przepraszam, nie sprzedam Panu <get name="nilosc"/>.</li>
+            <li><get name="nilosc"/> to troche za dużo.</li>
+            <li>Prosze wybaczyć ale mamy za duże obłożenie, żeby sprzedać tyle biletów na raz.</li>
+            <li>Przepraszam, nie sprzedam Panu takiej ilości biletów. Może Pan kupić maksymalnie 4.</li>
+            <li><get name="nilosc"/> to troche za dużo. Mogę Panu sprzedać maksymalnie 4 bilety.</li>
+            <li>Prosze wybaczyć ale mamy za duże obłożenie, żeby sprzedać tyle biletów na raz. Może Pan kupić maksymalnie 4 bilety</li>
+            <li>Może Pan kupić maksymalnie 4.</li>
+            <li>Niestety, mogę Panu sprzedać maksymalnie 4 bilety.</li>
+            <li>Niestety, mogę Panu sprzedać maksymalnie 4 bilety. Mamy za duże obłożenie.</li>
+            </random>
+        </li>
         </condition>
     </template>
   </category>
   
    <category>
-    <pattern>TAK STUDENCKA</pattern>
+    <pattern>* <set>wiecejbiletow</set>*</pattern>
     <template>
-    <condition name="klasa">
-            <li value="1">Niestety zniżka studencka nie obowiązuje w wagonach 1 klasy. Może jakaś inna zniżka?</li>
-            <li value="2">Dobrze.<delay>1</delay>Ze zniżką to bedzie 
+        <think> <set name = "nilosc"><star index="2" /></set>
+        <set name="hour"><date timezone="+1" format="%H"/></set>
+        </think>
+        <condition name="nilosc">
+        <li value="ile biletów">
             <random>
-            <li> 30</li>
-            <li> 43</li>
-            <li> 21</li>
-            <li> 48</li>
-            <li> 37</li>
-            <li> 25</li>
-         </random> złotych</li>
+            <li>Maksymalnie mogę sprzedać 4 bilety.</li>
+            <li>Może Pan kupić maksymalnie 4 bilety.</li>
+            </random> </li>
+        <li>
+            <random>
+            <li>Przepraszam, nie sprzedam Panu takiej ilości biletów.</li>
+            <li>Przepraszam, nie sprzedam Panu <get name="nilosc"/>.</li>
+            <li><get name="nilosc"/> to troche za dużo.</li>
+            <li>Prosze wybaczyć ale mamy za duże obłożenie, żeby sprzedać tyle biletów na raz.</li>
+            <li>Przepraszam, nie sprzedam Panu takiej ilości biletów. Może Pan kupić maksymalnie 4.</li>
+            <li><get name="nilosc"/> to troche za dużo. Mogę Panu sprzedać maksymalnie 4 bilety.</li>
+            <li>Prosze wybaczyć ale mamy za duże obłożenie, żeby sprzedać tyle biletów na raz. Może Pan kupić maksymalnie 4 bilety</li>
+            <li>Może Pan kupić maksymalnie 4.</li>
+            <li>Niestety, mogę Panu sprzedać maksymalnie 4 bilety.</li>
+            <li>Niestety, mogę Panu sprzedać maksymalnie 4 bilety. Mamy za duże obłożenie.</li>
+            </random>
+        </li>
         </condition>
     </template>
   </category>
   
+ 
+
    
  
   

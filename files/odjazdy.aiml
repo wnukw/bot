@@ -1,154 +1,866 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-	
+    <category>
+    <pattern><set>godz</set></pattern>
+    <template>
+        <think> 
+            <set name="godzina"><star /></set>  
+    </think>
+        <condition name="bezp">
+            <li value="T">
+                Rozumiem. To zmieniamy godzinę na <get name="godzina"/>. 
+                <condition name="ilosc">
+                <li value="1"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="jeden"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="jednen bilet"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="1 bilet"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li >Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="bilet"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li>
+                    <random>
+                        <li> Dobrze<delay>2</delay> Postram się posadzić Państwa jak najbliżej siebie. Czy przysługują Państwu jakieś zniżki?</li>
+                        <li> Nie ma sprawy.<delay>2</delay> Oj.. Niestety nie ma aż tyle miejsca w wagonie bezprzedziałowym. Wolą Państwo wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+            </condition>
+            </li>
+            <li>
+                <condition name="ilosc" >
+                    <li value="bilety">Ile biletów chciałby Pan kupić?</li>
+                    <li value="bilet">Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+                    <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
+                </condition>
+            </li>
+        </condition>
+                
+    </template>
+  </category>
+  
+    	
 	<category>
-    <pattern>O <set>s1</set></pattern>
+    <pattern>O <set>godz</set></pattern>
     <template>
         <think> 
-            <set name="godzina"><star index="2"/></set>  
+            <set name="godzina"><star /></set>  
     </think>
-        <condition name="set1">
-            <li value="1">
+        <condition name="bezp">
+            <li value="T">
+                Rozumiem. To zmieniamy godzinę na <get name="godzina"/>. 
+                <condition name="ilosc">
+                <li value="1"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="jeden"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="jednen bilet"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="1 bilet"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li >Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="bilet"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li>
+                    <random>
+                        <li> Dobrze<delay>2</delay> Postram się posadzić Państwa jak najbliżej siebie. Czy przysługują Państwu jakieś zniżki?</li>
+                        <li> Nie ma sprawy.<delay>2</delay> Oj.. Niestety nie ma aż tyle miejsca w wagonie bezprzedziałowym. Wolą Państwo wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+            </condition>
+            </li>
+            <li>
                 <condition name="ilosc" >
                     <li value="bilety">Ile biletów chciałby Pan kupić?</li>
                     <li value="bilet">Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
                     <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
-                </condition></li>
-            <li>Ten pociąg nie odjeżdza o tej godzinie.</li>
+                </condition>
+            </li>
         </condition>
+                
     </template>
   </category>
   
   
-  
   <category>
-    <pattern>O <set>s2</set></pattern>
+    <pattern>O godzinie <set>godz</set></pattern>
     <template>
         <think> 
-            <set name="godzina"><star index="2"/></set>  
+            <set name="godzina"><star /></set>  
     </think>
-        <condition name="set1">
-            <li value="2">
+        <condition name="bezp">
+            <li value="T">
+                Rozumiem. To zmieniamy godzinę na <get name="godzina"/>. 
+                <condition name="ilosc">
+                <li value="1"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="jeden"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="jednen bilet"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="1 bilet"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li >Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="bilet"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li>
+                    <random>
+                        <li> Dobrze<delay>2</delay> Postram się posadzić Państwa jak najbliżej siebie. Czy przysługują Państwu jakieś zniżki?</li>
+                        <li> Nie ma sprawy.<delay>2</delay> Oj.. Niestety nie ma aż tyle miejsca w wagonie bezprzedziałowym. Wolą Państwo wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+            </condition>
+            </li>
+            <li>
                 <condition name="ilosc" >
                     <li value="bilety">Ile biletów chciałby Pan kupić?</li>
                     <li value="bilet">Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
                     <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
-                </condition></li>
-            <li>Ten pociąg nie odjeżdza o tej godzinie.</li>
+                </condition>
+            </li>
         </condition>
+                
     </template>
   </category>
   
-  <category>
-    <pattern>O <set>s3</set></pattern>
-    <template>
-        <think> 
-            <set name="godzina"><star index="2"/></set>  
-    </think>
-        <condition name="set1">
-            <li value="3">
-                <condition name="ilosc" >
-                    <li value="bilety">Ile biletów chciałby Pan kupić?</li>
-                    <li value="bilet">Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
-                    <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
-                </condition></li>
-            <li>Ten pociąg nie odjeżdza o tej godzinie.</li> </condition>
-    </template>
-  </category>
- 
-  <category>
-    <pattern>O <set>s4</set></pattern>
-    <template>
-        <think> 
-            <set name="godzina"><star index="2"/></set>  
-    </think>
-        <condition name="set1">
-            <li value="4">
-                <condition name="ilosc" >
-                    <li value="bilety">Ile biletów chciałby Pan kupić?</li>
-                    <li value="bilet">Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
-                    <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
-                </condition></li>
-            <li>Ten pociąg nie odjeżdza o tej godzinie.</li> </condition>
-    </template>
-  </category>
   
-  	<category>
-    <pattern>O <set>s8</set></pattern>
+  
+  
+  <category>
+    <pattern>* <set>godz</set></pattern>
     <template>
         <think> 
-            <set name="godzina"><star index="2"/></set>  
+            <set name="godzina"><star /></set>  
     </think>
-        <condition name="set1">
-            <li value="8">
+                <condition name="bezp">
+            <li value="T">
+                Rozumiem. To zmieniamy godzinę na <get name="godzina"/>. 
+                <condition name="ilosc">
+                <li value="1"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="jeden"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="jednen bilet"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="1 bilet"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li >Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="bilet"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li>
+                    <random>
+                        <li> Dobrze<delay>2</delay> Postram się posadzić Państwa jak najbliżej siebie. Czy przysługują Państwu jakieś zniżki?</li>
+                        <li> Nie ma sprawy.<delay>2</delay> Oj.. Niestety nie ma aż tyle miejsca w wagonie bezprzedziałowym. Wolą Państwo wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+            </condition>
+            </li>
+            <li>
                 <condition name="ilosc" >
                     <li value="bilety">Ile biletów chciałby Pan kupić?</li>
                     <li value="bilet">Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
                     <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
-                </condition></li>
-            <li>Ten pociąg nie odjeżdza o tej godzinie.</li>
+                </condition>
+            </li>
         </condition>
-    </template>
-  </category>
-  
-  <category>
-    <pattern>O <set>s9</set></pattern>
-    <template>
-        <think> 
-            <set name="godzina"><star index="2"/></set>  
-    </think>
-        <condition name="set1">
-            <li value="9">
-                <condition name="ilosc" >
-                    <li value="bilety">Ile biletów chciałby Pan kupić?</li>
-                    <li value="bilet">Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
-                    <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
-                </condition></li>
-            <li>Ten pociąg nie odjeżdza o tej godzinie.</li>
-        </condition>
-    </template>
-  </category>
-  
-  <category>
-    <pattern>O <set>s10</set></pattern>
-    <template>
-        <think> 
-            <set name="godzina"><star index="2"/></set>  
-    </think>
-        <condition name="set1">
-            <li value="10">
-                <condition name="ilosc" >
-                    <li value="bilety">Ile biletów chciałby Pan kupić?</li>
-                    <li value="bilet">Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
-                    <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
-                </condition></li>
-            <li>Ten pociąg nie odjeżdza o tej godzinie.</li> </condition>
-    </template>
-  </category>
-  
-    
-  <category>
-    <pattern>O <set>s11</set></pattern>
-    <template>
-        <think> 
-            <set name="godzina"><star index="2"/></set>  
-    </think>
-        <condition name="set1">
-            <li value="11">
-                <condition name="ilosc" >
-                    <li value="bilety">Ile biletów chciałby Pan kupić?</li>
-                    <li value="bilet">Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
-                    <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
-                </condition></li>
-            <li>Ten pociąg nie odjeżdza o tej godzinie.</li> </condition>
     </template>
   </category>
   
 <category>
-    <pattern>O *</pattern>
+    <pattern>* <set>godz</set> *</pattern>
     <template>
-        Pociąg nie odjeżdza o tej godzinie..
+        <think> 
+            <set name="godzina"><star /></set>  
+    </think>
+               <condition name="bezp">
+            <li value="T">
+                Rozumiem. To zmieniamy godzinę na <get name="godzina"/>. 
+                <condition name="ilosc">
+                <li value="1"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="jeden"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="jednen bilet"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="1 bilet"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li >Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="bilet"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li>
+                    <random>
+                        <li> Dobrze<delay>2</delay> Postram się posadzić Państwa jak najbliżej siebie. Czy przysługują Państwu jakieś zniżki?</li>
+                        <li> Nie ma sprawy.<delay>2</delay> Oj.. Niestety nie ma aż tyle miejsca w wagonie bezprzedziałowym. Wolą Państwo wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+            </condition>
+            </li>
+            <li>
+                <condition name="ilosc" >
+                    <li value="bilety">Ile biletów chciałby Pan kupić?</li>
+                    <li value="bilet">Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+                    <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
+                </condition>
+            </li>
+        </condition>
     </template>
   </category>
+  
+  <category>
+    <pattern>O <set>godz</set> *</pattern>
+    <template>
+        <think> 
+            <set name="godzina"><star /></set>  
+    </think>
+                <condition name="bezp">
+            <li value="T">
+                Rozumiem. To zmieniamy godzinę na <get name="godzina"/>. 
+                <condition name="ilosc">
+                <li value="1"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="jeden"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="jednen bilet"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="1 bilet"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li >Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="bilet"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li>
+                    <random>
+                        <li> Dobrze<delay>2</delay> Postram się posadzić Państwa jak najbliżej siebie. Czy przysługują Państwu jakieś zniżki?</li>
+                        <li> Nie ma sprawy.<delay>2</delay> Oj.. Niestety nie ma aż tyle miejsca w wagonie bezprzedziałowym. Wolą Państwo wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+            </condition>
+            </li>
+            <li>
+                <condition name="ilosc" >
+                    <li value="bilety">Ile biletów chciałby Pan kupić?</li>
+                    <li value="bilet">Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+                    <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
+                </condition>
+            </li>
+        </condition>
+    </template>
+  </category>
+  
+   <category>
+    <pattern>* O <set>godz</set></pattern>
+    <template>
+        <think> 
+            <set name="godzina"><star index="2" /></set>  
+    </think>
+                <condition name="bezp">
+            <li value="T">
+                Rozumiem. To zmieniamy godzinę na <get name="godzina"/>. 
+                <condition name="ilosc">
+                <li value="1"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="jeden"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="jednen bilet"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="1 bilet"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li >Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li value="bilet"><think><set name="os">1</set></think>
+                    <random>
+                        <li> A odnośnie miejsca. Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Woli Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Chciałby Pan siedzeć przy oknie czy na środku?</li>
+                        <li> Niestety, nie mamy już miejsc w wagonach bezprzedziałowych. Woli Pan wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+                <li>
+                    <random>
+                        <li> Dobrze<delay>2</delay> Postram się posadzić Państwa jak najbliżej siebie. Czy przysługują Państwu jakieś zniżki?</li>
+                        <li> Nie ma sprawy.<delay>2</delay> Oj.. Niestety nie ma aż tyle miejsca w wagonie bezprzedziałowym. Wolą Państwo wybrać wagon przedziałowy czy zmianę godziny odjazdu?</li>
+                    </random>
+                </li>
+            </condition>
+            </li>
+            <li>
+                <condition name="ilosc" >
+                    <li value="bilety">Ile biletów chciałby Pan kupić?</li>
+                    <li value="bilet">Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan mieć  miejsce?</li>
+                    <li>Dobrze.<delay>2</delay>W jakiej klasie chciałby Pan miejsca?</li>
+                </condition>
+            </li>
+        </condition>
+    </template>
+  </category>
+  
+         <category>
+             <pattern>NA TERAZ *</pattern>
+                    <template>
+                        <srai>NA TERAZ</srai>
+                    </template>
+                  </category> 
+                  
+              <category>
+             
+             <pattern>* NA TERAZ *</pattern>
+                    <template>
+                        <srai>NA TERAZ</srai>
+                    </template>
+                  </category> 
+             
+             <category>
+             
+             <pattern>* NA TERAZ</pattern>
+                    <template>
+                        <srai>NA TERAZ</srai>
+                    </template>
+                  </category> 
+             
+             
+             <category>
+                    <pattern>NA TERAZ</pattern>
+                    <template>
+                        <condition name="hour">
+                            <li value="09"> 
+                                <random>
+                                    <li>Najbliższe pociągi do <get name="miasto"/> odjeżdzają o 09:43 oraz 10:22</li>
+                                    <li>Niestety najbliższe pociągi odjeżdza dopiero o 13:20 i 15:24</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li>
+                            <li value="10"> 
+                                <random>
+                                    <li>Najbliższe pociągi do <get name="miasto"/> odjeżdzają o 10:20 oraz 11:12</li>
+                                    <li>Niestety najbliższe pociągi odjeżdza dopiero o 14:20 i 15:24</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li>
+                            <li value="11"> 
+                                 <random>
+                                    <li>Najbliższe pociągi do <get name="miasto"/> odjeżdzają o 11:43 oraz 12:22</li>
+                                    <li>Niestety najbliższe pociągi odjeżdza dopiero o 14:50 i 15:24</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li>
+                            <li value="12">
+                                 <random>
+                                    <li>Najbliższe pociągi do <get name="miasto"/> odjeżdzają o 12:22 oraz 13:31</li>
+                                    <li>Niestety najbliższe pociągi odjeżdza dopiero o 15:20 i 16:24</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li>
+                            <li value="13">
+                                <random>
+                                    <li>Najbliższe pociągi do <get name="miasto"/> odjeżdzają o 13:43 oraz 14:22</li>
+                                    <li>Niestety najbliższe pociągi odjeżdza dopiero o 16:20 i 18:24</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li>
+                            <li value="14">
+                                 <random>
+                                    <li>Najbliższe pociągi do <get name="miasto"/> odjeżdzają o 14:22 oraz 15:20</li>
+                                    <li>Niestety najbliższe pociągi odjeżdza dopiero o 16:45 i 17:34</li>
+                                </random>   
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li> 
+                        </condition>
+                    </template>
+                  </category> 
+                  
+                  <category>
+                    <pattern>* NA PÓŹNIEJ *</pattern>
+                    <template>
+                        <srai>NA PÓŹNIEJ</srai>
+                    </template>
+                  </category> 
+                  
+                  
+                  <category>
+                    <pattern>NA PÓŹNIEJ *</pattern>
+                    <template>
+                        <srai>NA PÓŹNIEJ</srai>
+                    </template>
+                  </category> 
+                  
+                  
+                  <category>
+                    <pattern>NA PÓŹNIEJ</pattern>
+                    <template>
+                        <condition name="hour">
+                            <li value="09"> 
+                                <random>
+                                    <li>Późniejsze pociągi do <get name="miasto"/> odjeżdzają o 13:30, 14:42, 16:10, 17:51, 18:21 oraz 20:02</li>
+                                    <li>Później może Pan pojechać o 13:34, 15:33, 16:52, 17:40, 18:43 oraz 20:32</li>
+                                    <li>Późniejsze pociągi odjeżdzaja w godzinach: 14:34, 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                    <li>Po południu pociągi do <get name="miasto"/> odjeżdzają o 14:34, 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li>
+                            <li value="10"> 
+                                <random>
+                                    <li>Późniejsze pociągi do <get name="miasto"/> odjeżdzają o 13:30, 14:42, 16:10, 17:51, 18:21 oraz 20:02</li>
+                                    <li>Później może Pan pojechać o 13:34, 15:33, 16:52, 17:40, 18:43 oraz 20:32</li>
+                                    <li>Późniejsze pociągi odjeżdzaja w godzinach: 14:34, 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                    <li>Po południu pociągi do <get name="miasto"/> odjeżdzają o 14:34, 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li>
+                            <li value="11"> 
+                                 <random>
+                                    <li>Późniejsze pociągi do <get name="miasto"/> odjeżdzają o 13:30, 14:42, 16:10, 17:51, 18:21 oraz 20:02</li>
+                                    <li>Później może Pan pojechać o 13:34, 15:33, 16:52, 17:40, 18:43 oraz 20:32</li>
+                                    <li>Późniejsze pociągi odjeżdzaja w godzinach: 14:34, 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                    <li>Po południu pociągi do <get name="miasto"/> odjeżdzają o 14:34, 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li>
+                            <li value="12">
+                                 <random>
+                                    <li>Późniejsze pociągi do <get name="miasto"/> odjeżdzają o 14:42, 16:10, 17:51, 18:21 oraz 20:02</li>
+                                    <li>Później może Pan pojechać o 15:33, 16:52, 17:40, 18:43 oraz 20:32</li>
+                                    <li>Późniejsze pociągi odjeżdzaja w godzinach: 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                    <li>Po południu pociągi do <get name="miasto"/> odjeżdzają o 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li>
+                            <li value="13">
+                                <random>
+                                    <li>Późniejsze pociągi do <get name="miasto"/> odjeżdzają o 16:10, 17:51, 18:21 oraz 20:02</li>
+                                    <li>Później może Pan pojechać o 15:33, 16:52, 17:40, 18:43 oraz 20:32</li>
+                                    <li>Późniejsze pociągi odjeżdzaja w godzinach: 16:44, 17:28, 18:43 oraz 20:41</li>
+                                    <li>Po południu pociągi do <get name="miasto"/> odjeżdzają o 16:44, 17:28, 18:43 oraz 20:41</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li>
+                            <li value="14">
+                                 <random>
+                                    <li>Późniejsze pociągi do <get name="miasto"/> odjeżdzają o 16:10, 17:51, 18:21 oraz 20:02</li>
+                                    <li>Później może Pan pojechać o 16:52, 17:40, 18:43 oraz 20:32</li>
+                                    <li>Późniejsze pociągi odjeżdzaja w godzinach: 16:44, 17:28, 18:43 oraz 20:41</li>
+                                    <li>Po południu pociągi do <get name="miasto"/> odjeżdzają o 16:44, 17:28, 18:43 oraz 20:41</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li> 
+                        </condition>
+                    </template>
+                  </category>   
+                  
+                  <category>
+                    <pattern>* PÓŹNIEJ</pattern>
+                    <template>
+                        <srai>NA PÓŹNIEJ</srai>
+                    </template>
+                  </category>   
+                  
+                  <category>
+                    <pattern>* PÓŹNIEJSZE</pattern>
+                    <template>
+                        <srai>NA PÓŹNIEJ</srai>
+                    </template>
+                  </category>   
+                  
+                  <category>
+                    <pattern>* PÓŹNIEJSZYM</pattern>
+                    <template>
+                        <srai>NA PÓŹNIEJ</srai>
+                    </template>
+                  </category>   
+                  
+                  
+                  <category>
+                    <pattern>* ZMIANĘ *</pattern>
+                    <template>
+                        <think><set name="bezp">T</set></think>
+                        <condition name="hour">
+                            <li value="09"> 
+                                <random>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 13:30, 14:42, 16:10, 17:51, 18:21 oraz 20:02</li>
+                                    <li>Może Pan pojechać o 13:34, 15:33, 16:52, 17:40, 18:43 oraz 20:32</li>
+                                    <li>Pociągi odjeżdzaja w godzinach: 14:34, 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 14:34, 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li>
+                            <li value="10"> 
+                                <random>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 13:30, 14:42, 16:10, 17:51, 18:21 oraz 20:02</li>
+                                    <li>Może Pan pojechać o 13:34, 15:33, 16:52, 17:40, 18:43 oraz 20:32</li>
+                                    <li>Pociągi odjeżdzaja w godzinach: 14:34, 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 14:34, 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li>
+                            <li value="11"> 
+                                 <random>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 13:30, 14:42, 16:10, 17:51, 18:21 oraz 20:02</li>
+                                    <li>Może Pan pojechać o 13:34, 15:33, 16:52, 17:40, 18:43 oraz 20:32</li>
+                                    <li>Pociągi odjeżdzaja w godzinach: 14:34, 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 14:34, 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li>
+                            <li value="12">
+                                 <random>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 14:42, 16:10, 17:51, 18:21 oraz 20:02</li>
+                                    <li>Może Pan pojechać o 15:33, 16:52, 17:40, 18:43 oraz 20:32</li>
+                                    <li>Pociągi odjeżdzaja w godzinach: 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li>
+                            <li value="13">
+                                <random>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 16:10, 17:51, 18:21 oraz 20:02</li>
+                                    <li>Może Pan pojechać o 15:33, 16:52, 17:40, 18:43 oraz 20:32</li>
+                                    <li>Pociągi odjeżdzaja w godzinach: 16:44, 17:28, 18:43 oraz 20:41</li>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 16:44, 17:28, 18:43 oraz 20:41</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li>
+                            <li value="14">
+                                 <random>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 16:10, 17:51, 18:21 oraz 20:02</li>
+                                    <li>Może Pan pojechać o 16:52, 17:40, 18:43 oraz 20:32</li>
+                                    <li>Pociągi odjeżdzaja w godzinach: 16:44, 17:28, 18:43 oraz 20:41</li>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 16:44, 17:28, 18:43 oraz 20:41</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li> 
+                        </condition>
+                    </template>
+                  </category>   
+                  
+                  
+                  <category>
+                    <pattern>* ZMIANĘ</pattern>
+                    <template>
+                        <srai>ZMIANĘ</srai>
+                    </template>
+                  </category>   
+                  
+                  
+                  <category>
+                    <pattern>ZMIANĘ</pattern>
+                    <template>
+                        <think><set name="bezp">T</set></think>
+                        <condition name="hour">
+                            <li value="09"> 
+                                <random>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 13:30, 14:42, 16:10, 17:51, 18:21 oraz 20:02</li>
+                                    <li>Może Pan pojechać o 13:34, 15:33, 16:52, 17:40, 18:43 oraz 20:32</li>
+                                    <li>Pociągi odjeżdzaja w godzinach: 14:34, 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 14:34, 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li>
+                            <li value="10"> 
+                                <random>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 13:30, 14:42, 16:10, 17:51, 18:21 oraz 20:02</li>
+                                    <li>Może Pan pojechać o 13:34, 15:33, 16:52, 17:40, 18:43 oraz 20:32</li>
+                                    <li>Pociągi odjeżdzaja w godzinach: 14:34, 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 14:34, 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li>
+                            <li value="11"> 
+                                 <random>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 13:30, 14:42, 16:10, 17:51, 18:21 oraz 20:02</li>
+                                    <li>Może Pan pojechać o 13:34, 15:33, 16:52, 17:40, 18:43 oraz 20:32</li>
+                                    <li>Pociągi odjeżdzaja w godzinach: 14:34, 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 14:34, 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li>
+                            <li value="12">
+                                 <random>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 14:42, 16:10, 17:51, 18:21 oraz 20:02</li>
+                                    <li>Może Pan pojechać o 15:33, 16:52, 17:40, 18:43 oraz 20:32</li>
+                                    <li>Pociągi odjeżdzaja w godzinach: 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 15:13, 16:44, 17:28, 18:43 oraz 20:41</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li>
+                            <li value="13">
+                                <random>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 16:10, 17:51, 18:21 oraz 20:02</li>
+                                    <li>Może Pan pojechać o 15:33, 16:52, 17:40, 18:43 oraz 20:32</li>
+                                    <li>Pociągi odjeżdzaja w godzinach: 16:44, 17:28, 18:43 oraz 20:41</li>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 16:44, 17:28, 18:43 oraz 20:41</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li>
+                            <li value="14">
+                                 <random>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 16:10, 17:51, 18:21 oraz 20:02</li>
+                                    <li>Może Pan pojechać o 16:52, 17:40, 18:43 oraz 20:32</li>
+                                    <li>Pociągi odjeżdzaja w godzinach: 16:44, 17:28, 18:43 oraz 20:41</li>
+                                    <li>Pociągi do <get name="miasto"/> odjeżdzają o 16:44, 17:28, 18:43 oraz 20:41</li>
+                                </random>
+                                . O której godzinie chciałby Pan wyjechać? 
+                            </li> 
+                        </condition>
+                    </template>
+                  </category>   
+                  
+                  
+                  
+                  
+                  <category>
+                    <pattern>ZMIANĘ *</pattern>
+                    <template>
+                         <srai>ZMIANĘ</srai>
+                    </template>
+                  </category>   
+                  
+                  <category>
+                    <pattern>ZMIENIĆ *</pattern>
+                    <template>
+                         <srai>ZMIANĘ</srai>
+                    </template>
+                  </category>   
+                  
+                  
+                  
+                  
+                  
+                  
+                  <category>
+                    <pattern>ZMIENIĆ</pattern>
+                    <template>
+                         <srai>ZMIANĘ</srai>
+                    </template>
+                  </category>   
+                  
+                  
+                  
+                  <category>
+                    <pattern>* ZMIENIĆ </pattern>
+                    <template>
+                         <srai>ZMIANĘ</srai>
+                    </template>
+                  </category>   
+                  
+                  <category>
+                    <pattern>* ZMIENIĆ *</pattern>
+                    <template>
+                        <srai>ZMIANĘ</srai>
+                    </template>
+                  </category>   
+                  
+                  
+                  
+                  
+                  
+                  <category>
+                      <pattern>*</pattern>
+                      <template>
+                          Przepraszam nie zrozumiałam. Może Pan powiedzieć dokładniej?
+                      </template>
+                  </category>
+                  
+                  <category>
+                      <pattern>* na jutro</pattern>
+                      <template>
+                       Niestety nie. Ja już kończę pracę. Proszę przyjść jutro.  
+                      </template>
+                  </category>
   
 </aiml>

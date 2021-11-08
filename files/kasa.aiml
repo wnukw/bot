@@ -7,6 +7,75 @@
     </template>
   </category>
   
+  <category>
+    <pattern>DOBRZE DZIĘKUJĘ</pattern>
+    <template>
+        Dziękuję, do widzenia. NASTĘPNY!!
+    </template>
+  </category>
+  
+  <category>
+    <pattern>KARTĄ</pattern>
+    <template>
+        Proszę przyłożyć kartę do terminala.<delay>2</delay>Biiiiip<delay>2</delay>Dziękuję, do widzenia. Poproszę następną osobę z kolejki!
+    </template>
+  </category>
+  
+  <category>
+    <pattern>* KARTĄ</pattern>
+    <template>
+        Proszę przyłożyć kartę do terminala.<delay>2</delay>Biiiiip<delay>2</delay>Dziękuję, do widzenia. Poproszę następną osobę z kolejki!
+    </template>
+  </category>
+  <category>
+    <pattern>KARTĄ *</pattern>
+    <template>
+        Proszę przyłożyć kartę do terminala.<delay>2</delay>Biiiiip<delay>2</delay>Dziękuję, do widzenia. Poproszę następną osobę z kolejki!
+    </template>
+  </category>
+  
+  <category>
+    <pattern>* KARTĄ *</pattern>
+    <template>
+        Proszę przyłożyć kartę do terminala.<delay>2</delay>Biiiiip<delay>2</delay>Dziękuję, do widzenia. Poproszę następną osobę z kolejki!
+    </template>
+  </category>
+  
+  <category>
+    <pattern>GOTÓWKĄ</pattern>
+    <template>
+        Dziękuję. Do widzenia. NASTĘPNY!
+        </template>
+  </category>
+  
+  <category>
+    <pattern>* GOTÓWKĄ</pattern>
+    <template>
+        Dziękuję. Do widzenia. NASTĘPNY!
+        </template>
+  </category>
+  
+  <category>
+    <pattern>GOTÓWKĄ *</pattern>
+    <template>
+        Dziękuję. Do widzenia. NASTĘPNY!
+        </template>
+  </category>
+  
+  <category>
+    <pattern>* GOTÓWKĄ *</pattern>
+    <template>
+        Dziękuję. Do widzenia. NASTĘPNY!
+        </template>
+  </category>
+  
+  <category>
+    <pattern>OK, DZIĘKUJĘ</pattern>
+    <template>
+        Dziękuję, do widzenia. NASTĘPNY!!
+    </template>
+  </category>
+  
    <category>
     <pattern>PROSZĘ, ODLICZONE</pattern>
     <template>
@@ -26,6 +95,14 @@
         Dziękuję. Do widzenia!. Poproszę następną osobę do kasy.
     </template>
   </category>
+ 
+ <category>
+    <pattern>DOBRZE, DZIĘKUJĘ</pattern>
+    <template>
+        Dziękuję. Do widzenia!. Poproszę następną osobę do kasy.
+    </template>
+  </category>
+ 
  
   <category>
     <pattern>MAM TYLKO 100 ZŁOTYCH</pattern>

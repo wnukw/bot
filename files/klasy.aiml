@@ -7,227 +7,61 @@
          <think> 
             <set name="klasa">1</set>  
          </think>
-        <condition name="ilosc">
-            <li value ="jeden">Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
-            <condition name="rodzaj">
-                <li>Przysługuje Panu jakaś zniżka?</li>
-                <li value="normalny"> To bedzie 
-                    <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
-                 </random> złotych</li>
-                <li value="ulgowy"> W pierwszej klasie nie obowiązują zniżki studenckie. Musi Pan zapłacić 
-            <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
-         </random> złotych. Tyle co za bilet normalny. Chyba, że woli Pan jednak miejsce w 2 klasie?</li>
-                </condition>
-            </li>  
-            <li value ="1">Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
-            <condition name="rodzaj">
-                <li value="unknown">Przysługuje Panu jakaś zniżka?</li>
-                <li value="normalny"> To bedzie 
-                    <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
-                 </random> złotych</li>
-                <li value="ulgowy"> W pierwszej klasie nie obowiązują zniżki studenckie. Musi Pan zapłacić 
-            <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
-         </random> złotych. Tyle co za bilet normalny. Chyba, że woli Pan jednak miejsce w 2 klasie?</li>
-                <li value="normalne"> To bedzie 
-                    <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
-                 </random> złotych</li>
-                <li value="ulgowe"> W pierwszej klasie nie obowiązują zniżki studenckie. Musi Pan zapłacić 
-            <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
-         </random> złotych. Tyle co za bilet normalny. Chyba, że woli Pan jednak miejsce w 2 klasie?</li>
-                </condition>
-            </li>  
-            <li value ="jeden bilet">Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
-            <condition name="rodzaj">
-                <li value="unknown">Przysługuje Panu jakaś zniżka?</li>
-                <li value="normalny"> To bedzie 
-                    <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
-                 </random> złotych</li>
-                <li value="ulgowy"> W pierwszej klasie nie obowiązują zniżki studenckie. Musi Pan zapłacić 
-            <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
-         </random> złotych. Tyle co za bilet normalny. Chyba, że woli Pan jednak miejsce w 2 klasie?</li>
-         <li value="normalne"> To bedzie 
-                    <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
-                 </random> złotych</li>
-                <li value="ulgowe"> W pierwszej klasie nie obowiązują zniżki studenckie. Musi Pan zapłacić 
-            <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
-         </random> złotych. Tyle co za bilet normalny. Chyba, że woli Pan jednak miejsce w 2 klasie?</li>
-                </condition>
-            </li>  
-            <li value ="1 bilet">Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
-            <condition name="rodzaj">
-                <li value="unknown">Przysługuje Panu jakaś zniżka?</li>
-                <li value="normalny"> To bedzie 
-            <random>
-            <li> 60</li>
-            <li> 86</li>
-            <li> 42</li>
-            <li> 99</li>
-            <li> 74</li>
-            <li> 50</li>
-         </random> złotych</li>
-         <li value="normalne"> To bedzie 
-            <random>
-            <li> 60</li>
-            <li> 86</li>
-            <li> 42</li>
-            <li> 99</li>
-            <li> 74</li>
-            <li> 50</li>
-         </random> złotych</li>
-                <li value="ulgowy"> W pierwszej klasie nie obowiązują zniżki studenckie. Musi Pan zapłacić
-            <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
-         </random> złotych. Chyba, że woli Pan jednak miejsce w 2 klasie?</li>
-          <li value="ulgowe"> W pierwszej klasie nie obowiązują zniżki studenckie. Musi Pan zapłacić
-            <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
-         </random> złotych. Chyba, że woli Pan jednak miejsce w 2 klasie?</li>
-                </condition>
-            </li> 
-            <li value ="bilet">Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
-            <condition name="rodzaj">
-                <li value="unknown">Przysługuje Panu jakaś zniżka?</li>
-                <li value="normalny"> To bedzie 
-            <random>
-            <li> 60</li>
-            <li> 86</li>
-            <li> 42</li>
-            <li> 99</li>
-            <li> 74</li>
-            <li> 50</li>
-         </random> złotych</li>
-         <li value="normalne"> To bedzie 
-            <random>
-            <li> 60</li>
-            <li> 86</li>
-            <li> 42</li>
-            <li> 99</li>
-            <li> 74</li>
-            <li> 50</li>
-         </random> złotych</li>
-                <li value="ulgowy"> W 1 klasie nie obowiązują ulgi dla studentów. Musi Pan zapłacić 
-            <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
-         </random> złotych. Chyba, że woli Pan jednak miejsce w 2 klasie?</li>
-                <li value="ulgowe"> W 1 klasie nie obowiązują ulgi dla studentów. Musi Pan zapłacić 
-            <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
-         </random> złotych. Chyba, że woli Pan jednak miejsce w 2 klasie?</li>
-                </condition>
-            </li> 
-            
-            <li>Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
-            <condition name="rodzaj">
-                <li value="normalne"> To bedzie 
-                    <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
-                 </random> złotych</li>
-                <li value="ulgowe"> W 1 klasie nie obowiązują ulgi dla studentów. Musi Pan zapłacić 
-            <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
-         </random> złotych. Chyba, że woli Pan jednak miejsce w 2 klasie?</li>
-               
-            <li> Czy przysługują Państwu jakieś zniżki?</li>
-            </condition>
-            </li>
-        </condition>
+        Rozumiem. Czyli mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>. Wolałby Pan wagon przedziałowy czy bezprzedziałowy?
         </template>
           </category>
           
 
-  
    <category>
     <pattern>W PIERWSZEJ</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  <category>
+    <pattern>KLASĘ 1</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* KLASĘ 1</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  <category>
+    <pattern>KLASĘ 1 *</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* KLASĘ 1 *</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>KLASĘ PIERWSZĄ</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* KLASĘ PIERWSZĄ</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  <category>
+    <pattern>KLASĘ PIERWSZĄ *</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* KLASĘ PIERWSZĄ *</pattern>
+    <template><srai>W 1</srai></template>
+  </category>
+  
+  
+  
+  <category>
+    <pattern>PIERWSZEJ</pattern>
     <template><srai>W 1</srai></template>
   </category>
   
@@ -320,238 +154,7 @@
          <think> 
             <set name="klasa">2</set>  
          </think>
-        <condition name="ilosc">
-            <li value ="jeden">Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
-            <condition name="rodzaj">
-                <li value="unknown">Przysługuje Panu jakaś zniżka?</li>
-                <li value="normalny"> To bedzie 
-            <random>
-            <li> 40</li>
-            <li> 66</li>
-            <li> 22</li>
-            <li> 79</li>
-            <li> 44</li>
-            <li> 30</li>
-         </random> złotych</li>
-                <li value="ulgowy"> Ze zniżką to bedzie 
-            <random>
-            <li> 20</li>
-            <li> 33</li>
-            <li> 11</li>
-            <li> 39</li>
-            <li> 22</li>
-            <li> 15</li>
-         </random> złotych</li>
-         <li value="normalne"> To bedzie 
-            <random>
-            <li> 40</li>
-            <li> 66</li>
-            <li> 22</li>
-            <li> 79</li>
-            <li> 44</li>
-            <li> 30</li>
-         </random> złotych</li>
-                <li value="ulgowe"> Ze zniżką to bedzie 
-            <random>
-            <li> 20</li>
-            <li> 33</li>
-            <li> 11</li>
-            <li> 39</li>
-            <li> 22</li>
-            <li> 15</li>
-         </random> złotych</li>
-                </condition>
-            </li> 
-            <li value ="1">Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
-            <condition name="rodzaj">
-                <li value="unknown">Przysługuje Panu jakaś zniżka?</li>
-                <li value="normalny"> To bedzie 
-            <random>
-            <li> 40</li>
-            <li> 66</li>
-            <li> 22</li>
-            <li> 79</li>
-            <li> 44</li>
-            <li> 30</li>
-         </random> złotych</li>
-                <li value="ulgowy"> Ze zniżką to bedzie 
-            <random>
-            <li> 20</li>
-            <li> 33</li>
-            <li> 11</li>
-            <li> 39</li>
-            <li> 22</li>
-            <li> 15</li>
-         </random> złotych</li>
-         <li value="normalne"> To bedzie 
-            <random>
-            <li> 40</li>
-            <li> 66</li>
-            <li> 22</li>
-            <li> 79</li>
-            <li> 44</li>
-            <li> 30</li>
-         </random> złotych</li>
-                <li value="ulgowe"> Ze zniżką to bedzie 
-            <random>
-            <li> 20</li>
-            <li> 33</li>
-            <li> 11</li>
-            <li> 39</li>
-            <li> 22</li>
-            <li> 15</li>
-         </random> złotych</li>
-                </condition>
-            </li> 
-            <li value ="jeden bilet">Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
-            <condition name="rodzaj">
-                <li value="unknown">Przysługuje Panu jakaś zniżka?</li>
-                <li value="normalny"> To bedzie 
-            <random>
-            <li> 40</li>
-            <li> 66</li>
-            <li> 22</li>
-            <li> 79</li>
-            <li> 44</li>
-            <li> 30</li>
-         </random> złotych</li>
-                <li value="ulgowy"> Ze zniżką to bedzie 
-            <random>
-            <li> 20</li>
-            <li> 33</li>
-            <li> 11</li>
-            <li> 39</li>
-            <li> 22</li>
-            <li> 15</li>
-         </random> złotych</li>
-         <li value="normalne"> To bedzie 
-            <random>
-            <li> 40</li>
-            <li> 66</li>
-            <li> 22</li>
-            <li> 79</li>
-            <li> 44</li>
-            <li> 30</li>
-         </random> złotych</li>
-                <li value="ulgowe"> Ze zniżką to bedzie 
-            <random>
-            <li> 20</li>
-            <li> 33</li>
-            <li> 11</li>
-            <li> 39</li>
-            <li> 22</li>
-            <li> 15</li>
-         </random> złotych</li>
-                </condition>
-            </li>  
-            <li value ="1 bilet">Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
-            <condition name="rodzaj">
-                <li value="unknown">Przysługuje Panu jakaś zniżka?</li>
-                <li value="normalny"> To bedzie 
-            <random>
-            <li> 40</li>
-            <li> 66</li>
-            <li> 22</li>
-            <li> 79</li>
-            <li> 44</li>
-            <li> 30</li>
-         </random> złotych</li>
-                <li value="ulgowy"> Ze zniżką to bedzie 
-            <random>
-            <li> 20</li>
-            <li> 33</li>
-            <li> 11</li>
-            <li> 39</li>
-            <li> 22</li>
-            <li> 15</li>
-         </random> złotych</li>
-         <li value="normalne"> To bedzie 
-            <random>
-            <li> 40</li>
-            <li> 66</li>
-            <li> 22</li>
-            <li> 79</li>
-            <li> 44</li>
-            <li> 30</li>
-         </random> złotych</li>
-                <li value="ulgowe"> Ze zniżką to bedzie 
-            <random>
-            <li> 20</li>
-            <li> 33</li>
-            <li> 11</li>
-            <li> 39</li>
-            <li> 22</li>
-            <li> 15</li>
-         </random> złotych</li>
-                </condition>
-            </li> 
-            <li value ="bilet">Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
-            <condition name="rodzaj">
-                <li value="unknown">Przysługuje Panu jakaś zniżka?</li>
-                <li value="normalny"> To bedzie 
-            <random>
-            <li> 40</li>
-            <li> 66</li>
-            <li> 22</li>
-            <li> 79</li>
-            <li> 44</li>
-            <li> 30</li>
-         </random> złotych</li>
-                <li value="ulgowy"> Ze zniżką to bedzie 
-            <random>
-            <li> 20</li>
-            <li> 33</li>
-            <li> 11</li>
-            <li> 39</li>
-            <li> 22</li>
-            <li> 15</li>
-         </random> złotych</li>
-         <li value="normalne"> To bedzie 
-            <random>
-            <li> 40</li>
-            <li> 66</li>
-            <li> 22</li>
-            <li> 79</li>
-            <li> 44</li>
-            <li> 30</li>
-         </random> złotych</li>
-                <li value="ulgowe"> Ze zniżką to bedzie 
-            <random>
-            <li> 20</li>
-            <li> 33</li>
-            <li> 11</li>
-            <li> 39</li>
-            <li> 22</li>
-            <li> 15</li>
-         </random> złotych</li>
-                </condition>
-            </li> 
-            <li>Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>.
-            <condition name="rodzaj">
-                <li value="normalne"> To bedzie 
-                    <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
-                 </random> złotych</li>
-                <li value="ulgowe"> W 1 klasie nie obowiązują ulgi dla studentów. Musi Pan zapłacić 
-            <random>
-                    <li> 60</li>
-                    <li> 86</li>
-                    <li> 42</li>
-                    <li> 99</li>
-                    <li> 74</li>
-                    <li> 50</li>
-         </random> złotych. Chyba, że woli Pan jednak miejsce w 2 klasie?</li>
-               
-            <li> Czy przysługują Państwu jakieś zniżki?</li>
-            </condition>
-
-            </li>
-        </condition>
+            Rozumiem. A więc..<delay>2</delay> Mamy <get name="ilosc" /> w <get name="klasa" /> klasie do <get name="miasto"/>. Wolałby Pan wagon przedziałowy czy bezprzedziałowy?
         </template>
           </category>
 
@@ -564,6 +167,55 @@
     <pattern>* W DRUGIEJ</pattern>
     <template><srai>W 2</srai></template>
   </category>
+  
+  <category>
+    <pattern>DRUGIEJ</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+   <category>
+    <pattern>KLASĘ 2</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* KLASĘ 2</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+  <category>
+    <pattern>KLASĘ 2 *</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* KLASĘ 2 *</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+  
+  
+    <category>
+    <pattern>KLASĘ DRUGĄ</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* KLASĘ DRUGĄ</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+  <category>
+    <pattern>KLASĘ DRUGĄ *</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* KLASĘ DRUGĄ *</pattern>
+    <template><srai>W 2</srai></template>
+  </category>
+  
+  
   
   <category>
     <pattern>* W 2</pattern>
@@ -640,6 +292,740 @@
     <template><srai>W 2</srai></template>
   </category>
   
+  <category>
+    <pattern>ILE KOSZTUJE BILET W 1 KLASIE</pattern>
+    <template>
+        <condition name="ilosc">
+            <li value="1"> Dla 1 osoby bilet kosztuje
+                <random>
+                  <li> 60</li><li> 86</li><li> 45</li><li> 99</li><li> 70</li><li> 50</li>
+                </random> 
+            </li>
+            <li value="1 bilet"> Dla 1 osoby bilet kosztuje
+                <random> 
+                    <li> 60</li><li> 86</li><li> 45</li><li> 99</li><li> 70</li><li> 50</li>
+                </random> 
+            </li>
+            <li value="jeden"> Dla 1 osoby bilet kosztuje
+                <random>
+                    <li> 60</li><li> 86</li><li> 45</li><li> 99</li><li> 70</li><li> 50</li>
+                </random> </li>
+            <li value="jeden bilet">Dla 1 osoby bilet kosztuje
+                <random>
+                    <li> 60</li><li> 86</li><li> 45</li><li> 99</li><li> 70</li><li> 50</li>
+                </random> 
+            </li>
+            <li value="bilet"> Dla 1 osoby bilet kosztuje
+                <random>
+                    <li> 60</li><li> 86</li><li> 45</li><li> 99</li><li> 70</li><li> 50</li>
+                </random> 
+            </li>
+            <li value="2"> Dla 2 osób łącznie bilety kosztują
+                <random>
+                    <li> 120</li><li> 170</li><li> 80</li><li> 198</li><li> 148</li><li> 100</li>
+                </random> </li>
+            <li value="dwa">  Dla 2 osób łącznie bilety kosztują
+                <random>
+                    <li> 120</li><li> 170</li><li> 80</li><li> 198</li><li> 148</li><li> 100</li>
+                </random></li>
+            <li value="dwa bilety"> Dla 2 osób łącznie bilety kosztują
+                <random>
+                    <li> 120</li><li> 170</li><li> 80</li><li> 198</li><li> 148</li><li> 100</li>
+                </random></li>
+            <li value="2 bilety"> Dla 2 osób łącznie bilety kosztują
+                <random>
+                    <li> 120</li><li> 170</li><li> 80</li><li> 198</li><li> 148</li><li> 100</li>
+                </random></li>
+            <li value="3"> Dla 3 osób łącznie bilety kosztują
+                <random>
+                    <li> 180</li><li> 258</li><li> 126</li><li> 297</li><li> 220</li><li> 150</li>
+                </random> </li>
+            <li value="3 bilety">Dla 3 osób łącznie bilety kosztują
+                <random>
+                    <li> 180</li><li> 258</li><li> 126</li><li> 297</li><li> 220</li><li> 150</li>
+                </random> </li>
+            <li value="trzy">Dla 3 osób łącznie bilety kosztują
+                <random>
+                    <li> 180</li><li> 258</li><li> 126</li><li> 297</li><li> 220</li><li> 150</li>
+                </random> </li>    
+            <li value="trzy bilety">Dla 3 osób łącznie bilety kosztują
+                <random>
+                    <li> 180</li><li> 258</li><li> 126</li><li> 297</li><li> 220</li><li> 150</li>
+                </random> </li> 
+            <li value="cztery">Dla 4 osób łącznie bilety kosztują
+                <random>
+                    <li> 240</li><li> 340</li><li> 168</li><li> 396</li><li> 398</li><li> 200</li>
+                </random> </li> 
+            <li value="cztery bilety">Dla 4 osób łącznie bilety kosztują
+                <random>
+                    <li> 240</li><li> 340</li><li> 168</li><li> 396</li><li> 398</li><li> 200</li>
+                </random> </li> 
+            <li value="4 bilety">Dla 4 osób łącznie bilety kosztują
+                <random>
+                    <li> 240</li><li> 340</li><li> 168</li><li> 396</li><li> 398</li><li> 200</li>
+                </random> </li> 
+            <li value="4">Dla 4 osób łącznie bilety kosztują
+                <random>
+                    <li> 240</li><li> 340</li><li> 168</li><li> 396</li><li> 398</li><li> 200</li>
+                </random> </li> 
+    </condition> złotych. 
+    </template>
+  </category>
   
+  
+  <category>
+    <pattern>* ILE KOSZTUJE BILET W 1 KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>ILE KOSZTUJE BILET W 1 KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>* ILE KOSZTUJE BILET W 1 KLASIE</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>ILE KOSZTUJE BILET W PIERWSZEJ KLASIE</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>* ILE KOSZTUJE BILET W PIERWSZEJ KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>ILE KOSZTUJE BILET W PIERWSZEJ KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>* ILE KOSZTUJE BILET W PIERWSZEJ KLASIE</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+   <category>
+    <pattern>ILE KOSZTUJE W PIERWSZEJ</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  
+   <category>
+    <pattern>ILE KOSZTUJE W 1</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* ILE KOSZTUJE W 1 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>ILE KOSZTUJE W 1 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>* ILE KOSZTUJE W 1</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  
+  
+   <category>
+    <pattern>ILE KOSZTUJE BILET W KLASIE 1</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* ILE KOSZTUJE BILET W KLASIE 1 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>ILE KOSZTUJE BILET W KLASIE 1 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>* ILE KOSZTUJE BILET W KLASIE 1</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+   <category>
+    <pattern>ILE KOSZTUJE W KLASIE 1</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* ILE KOSZTUJE W KLASIE 1 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>ILE KOSZTUJE W KLASIE 1 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>* ILE KOSZTUJE W KLASIE 1</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>ILE KOSZTUJE W PIERWSZEJ</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>* ILE KOSZTUJE W PIERWSZEJ *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>ILE KOSZTUJE W PIERWSZEJ *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>* ILE KOSZTUJE W PIERWSZEJ</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  
+  
+  <category>
+    <pattern>ILE KOSZTUJE BILET W 2 KLASIE</pattern>
+    <template>
+        <condition name="ilosc">
+            <li value="1"> Dla 1 osoby bilet kosztuje
+                <random>
+                     <li> 40</li><li> 66</li><li> 20</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="1 bilet">Dla 1 osoby bilet kosztuje
+                <random>
+                     <li> 40</li><li> 66</li><li> 20</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="jeden">Dla 1 osoby bilet kosztuje
+                <random>
+                    <li> 40</li><li> 66</li><li> 20</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> </li>
+            <li value="jeden bilet">Dla 1 osoby bilet kosztuje
+                <random>
+                    <li> 40</li><li> 66</li><li> 20</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="bilet">Dla 1 osoby bilet kosztuje
+                <random>
+                    <li> 40</li><li> 66</li><li> 20</li><li> 79</li><li> 45</li><li> 30</li>
+                </random> 
+            </li>
+            <li value="2 bilety">Dla 2 osób łącznie bilety kosztują
+                <random>
+                    <li> 80</li><li> 130</li><li> 45</li><li> 110</li><li> 100</li><li> 76</li>
+                </random> </li>
+            <li value="dwa">Dla 2 osób łącznie bilety kosztują
+                <random>
+                    <li> 80</li> <li> 130</li><li> 45</li><li> 110</li><li> 100</li><li> 76</li>
+                </random></li>
+            <li value="dwa bilety">Dla 2 osób łącznie bilety kosztują
+                <random>
+                    <li> 80</li><li> 130</li><li> 45</li><li> 110</li><li> 100</li><li> 76</li>
+                </random></li>
+            <li value="2">Dla 2 osób łącznie bilety kosztują
+                <random>
+                    <li> 80</li><li> 130</li><li> 45</li><li> 110</li><li> 100</li><li> 76</li>
+                </random></li>
+            <li value="3">Dla 3 osób łącznie bilety kosztują
+                <random>
+                    <li> 140</li><li> 210</li><li> 100</li><li> 240</li><li> 170</li><li> 150</li>
+                </random> </li>
+            <li value="3 bilety">Dla 3 osób łącznie bilety kosztują
+                <random>
+                    <li> 140</li><li> 210</li><li> 100</li><li> 240</li><li> 170</li><li> 150</li>
+                </random> </li>
+            <li value="trzy">Dla 3 osób łącznie bilety kosztują
+                <random>
+                    <li> 140</li><li> 210</li><li> 100</li><li> 240</li><li> 170</li><li> 150</li>
+                </random> </li>    
+            <li value="trzy bilety">Dla 3 osób łącznie bilety kosztują
+                <random>
+                    <li> 140</li><li> 210</li><li> 100</li><li> 240</li><li> 170</li><li> 150</li>
+                </random> </li> 
+            <li value="cztery">Dla 4 osób łącznie bilety kosztują
+                <random>
+                    <li> 211</li><li> 321</li><li> 174</li><li> 355</li> <li> 300</li><li> 225</li>
+                </random> </li> 
+            <li value="cztery bilety">Dla 4 osób łącznie bilety kosztują
+                <random>
+                    <li> 211</li><li> 321</li><li> 175</li><li> 357</li><li> 300</li><li> 225</li>
+                </random> </li> 
+            <li value="4 bilety">Dla 4 osób łącznie bilety kosztują
+                <random>
+                    <li> 211</li><li> 321</li><li> 175</li><li> 350</li><li> 300</li><li> 225</li>
+                </random> </li> 
+            <li value="4">Dla 4 osób łącznie bilety kosztują
+                <random>
+                    <li> 211</li><li> 321</li><li> 175</li><li> 350</li><li> 300</li><li> 225</li>
+                </random> </li> 
+    </condition> złotych.
+    </template>
+  </category>
+  
+  <category>
+    <pattern>ILE KOSZTUJE BILET W KLASIE 2</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* ILE KOSZTUJE BILET W KLASIE 2 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>ILE KOSZTUJE BILET W KLASIE 2 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* ILE KOSZTUJE BILET W KLASIE 2 </pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>* ILE KOSZTUJE BILET W 2 KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>ILE KOSZTUJE BILET W 2 KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* ILE KOSZTUJE BILET W 2 KLASIE</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>ILE KOSZTUJE W 2 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+
+  <category>
+    <pattern>* ILE KOSZTUJE W 2 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>ILE KOSZTUJE W 2 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* ILE KOSZTUJE W 2</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>A W 2 KLASIE</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>* A W 2 KLASIE</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>A W 2 KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>* A W 2 KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+   <category>
+    <pattern>A W 2</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+   <category>
+    <pattern>* A W 2</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+   <category>
+    <pattern>A W 2 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+   <category>
+    <pattern>* A W 2 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+    <category>
+    <pattern>A W KLASIE 2</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+   <category>
+    <pattern>* A W KLASIE 2</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+   <category>
+    <pattern>A W KLASIE 2 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+   <category>
+    <pattern>* A W KLASIE 2 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>A ILE W 2</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>* A ILE W 2</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>A ILE W 2 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>* A ILE W 2 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>A ILE W 2 KLASIE</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+   <category>
+    <pattern>* A ILE W 2 KLASIE</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+   <category>
+    <pattern>A ILE W 2 KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+   <category>
+    <pattern>* A ILE W 2 KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>A ILE W KLASIE 2</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>* A ILE W KLASIE 2</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>A ILE W KLASIE 2 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>* A ILE W KLASIE 2 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+
+
+
+
+
+
+<category>
+    <pattern>ILE KOSZTUJE BILET * W KLASIE 2</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* ILE KOSZTUJE BILET * W KLASIE 2 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>ILE KOSZTUJE BILET * W KLASIE 2 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* ILE KOSZTUJE BILET * W KLASIE 2 </pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>* ILE KOSZTUJE BILET * W 2 KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>ILE KOSZTUJE BILET * W 2 KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* ILE KOSZTUJE BILET * W 2 KLASIE</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+
+
+
+
+<category>
+    <pattern>ILE KOSZTUJE BILET * W KLASIE 1</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* ILE KOSZTUJE BILET * W KLASIE 1 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>ILE KOSZTUJE BILET * W KLASIE 1 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* ILE KOSZTUJE BILET * W KLASIE 1 </pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>* ILE KOSZTUJE BILET * W 1 KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>ILE KOSZTUJE BILET * W 1 KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* ILE KOSZTUJE BILET * W 1 KLASIE</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+
+
+
+
+
+
+
+
+
+  <category>
+    <pattern>A ILE W KLASIE 1</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>* A ILE W KLASIE 1</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>A ILE W KLASIE 1 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>* A ILE W KLASIE 1 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+
+
+  
+  <category>
+    <pattern>A W 1 KLASIE</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* A W 1 KLASIE</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>A W 1 KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>* A W 1 KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+   <category>
+    <pattern>A W 1</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* A W 1 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>A W 1 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+    <category>
+    <pattern>* A W 1</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>A W 1</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* A W KLASIE 1 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  <category>
+    <pattern>A W KLASIE 1 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+    <category>
+    <pattern>* A W KLASIE 1</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  
+   <category>
+    <pattern>A W 1 KLASIE</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* A W 1 KLASIE</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* A W 1 KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>A W 1 KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>A ILE W 1</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+   <category>
+    <pattern>A ILE W 1 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+   <category>
+    <pattern>* A ILE W 1</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+   <category>
+    <pattern>* A ILE W 1 *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+   <category>
+    <pattern>A ILE W 1 KLASIE</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+ <category>
+    <pattern>* A ILE W 1 KLASIE</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+   <category>
+    <pattern>A ILE W 1 KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+   <category>
+    <pattern>* A ILE W 1 KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  
+  
+  
+  
+  <category>
+    <pattern>ILE KOSZTUJE BILET W DRUGIEJ KLASIE</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* ILE KOSZTUJE BILET W DRUGIEJ KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>ILE KOSZTUJE BILET W DRUGIEJ KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* ILE KOSZTUJE BILET W DRUGIEJ KLASIE</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  
+  
+  
+    <category>
+    <pattern>W JAKIEJ CENIE 1 KLASA *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>W JAKIEJ CENIE 1 KLASA</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* W JAKIEJ CENIE 1 KLASA *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>W JAKIEJ CENIE BILET W 1 KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 1 KLASIE</srai></template>
+  </category>
+    
+    
+    
+    
+     <category>
+    <pattern>W JAKIEJ CENIE 2 KLASA *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>W JAKIEJ CENIE 2 KLASA</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>* W JAKIEJ CENIE 2 KLASA *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>W JAKIEJ CENIE BILET W 2 KLASIE *</pattern>
+    <template><srai>ILE KOSZTUJE BILET W 2 KLASIE</srai></template>
+  </category>
+    
     
 </aiml>

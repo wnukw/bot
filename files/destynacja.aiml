@@ -5,90 +5,94 @@
 <!-- SPRAWDZONE  -->   
     <category>
         <pattern>DO WROCŁAWIA</pattern>
-        <template><random>
-            <li>Proszę Pana ale my jesteśmy we wrocławiu...</li>
-            <li>Przecież jesteśmy we Wrocławiu.</li>
+        <template><think><set name="hour"><date timezone="+1" format="%H"/></set></think> 
+        <random>
+            <li>Proszę Pana ale my jesteśmy we Wrocławiu... Proszę wybrać inne miejsce.</li>
+            <li>Przecież jesteśmy we Wrocławiu. Proszę wybrać inne miejsce.</li>
         </random>
         </template>
     </category>
     
     <category>
-        <pattern>DOBRZE, W TAKIM RAZIE DO WROCŁAWIA</pattern>
+        <pattern>* DO WROCŁAWIA</pattern>
         <template><srai>DO WROCŁAWIA</srai></template>
     </category>
     
-    <category>
-        <pattern>W TAKIM RAZIE DO WROCŁAWIA</pattern>
-        <template><srai>DO WROCŁAWIA</srai></template>
-    </category>
-    
-    <category>
-        <pattern>DOBRZE, TO DO WROCŁAWIA</pattern>
-        <template><srai>DO WROCŁAWIA</srai></template>
-    </category>
-    
-    <category>
-        <pattern>TO DO WROCŁAWIA</pattern>
-        <template><srai>DO WROCŁAWIA</srai></template>
-    </category>
+   
     
 <!-- INNE MIEJSCE SPRAWDZONE -->    
 	<category>
     <pattern>DO *</pattern>
     <template>
         <think> <set name="miasto"><star /></set></think>
-        <condition name="pora">
-            <li value="W">
-                <random>
-                <li>Hmmm dobrze.<delay>2</delay>O której godzinie chciałby Pan wyjechać? Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
-                </random></li>
-                <li>Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
-                </random> O której godzinie chciałby Pan wyjechać? </li>
-                <li>Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
-                 </random> O której godzinie chciałby Pan wyjechać? </li>
-                </random>
-            </li>
-            
-            <li> 
-                <random>
-                <li>Hmmm dobrze.<delay>2</delay>O której godzinie chciałby Pan wyjechać? Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
-                </random></li>
-                <li>Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
-                </random> O której godzinie chciałby Pan wyjechać? </li>
-                <li>Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
-                 </random> O której godzinie chciałby Pan wyjechać? </li>
-                </random>
-            </li>
+        <condition name="hour">
+                        <li value="09"> Na teraz czy później w ciągu dnia?</li>
+                        <li value="10">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="11">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="12">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="13">  Na teraz czy później w ciągu dnia?.</li>
+                        <li value="14">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="15">  
+                            <random>
+                            <li>Jest po 15:00, wiec mogę Panu zaproponować 16:43, 17:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 15:00. Bedą jeszcze jechać o 16:44, 17:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 16:14, 17:27, 18:30 i 20:21</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="16"> 
+                            <random>
+                             <li>Jest po 16:00, wiec mogę Panu zaproponować 16:43, 17:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 16:00. Bedą jeszcze jechać o 16:44, 17:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 17:27, 18:30 i 20:21</li>  
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="17"> 
+                            <random>
+                            <li>Jest po 17:00, wiec mogę Panu zaproponować 17:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 17:00. Bedą jeszcze jechać o 17:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 18:30 i 20:21</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="18"> 
+                            <random>
+                            <li>Jest po 18:00, wiec mogę Panu zaproponować 18:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 18:00. Bedą jeszcze jechać o 18:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 18:30 i 20:21</li>
+                            <li>Niestety o tej godzinie to mogę tylko zaproponować pociąg o 19:33</li> 
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="19">  
+                            <random>
+                                <li>Jest po 19:00, wiec mogę Panu zaproponować 19:22 oraz 20:30</li>
+                                <li>Niestety o tej godzinie jeździ mało pociągów. Bedą jeszcze jechać o 19:51 oraz 20:27</li>
+                                <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 19:30 i 20:21</li>
+                                <li>Niestety o tej godzinie to mogę tylko zaproponować pociąg o 20:33</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="20">  
+                             <random>
+                                <li>Jest po 20:00, wiec mogę Panu zaproponować 20:30 i 21:21</li>
+                                <li>Niestety o tej godzinie jeździ mało pociągów. Bedą jeszcze jechały dwa o 20:27 i 21:12</li>
+                                <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 20:21 i 21:22</li>
+                                <li>Niestety o tej godzinie to mogę tylko zaproponować pociągi o 20:40 i 21:05</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="21">  
+                             <random>
+                                <li>Jest po 21:00 o tej godzinie już nie jedzie żaden pociąg.</li>
+                                <li>Niestety o tej godzinie nie jedzie już zadem pociąg.</li>
+                                <li>Już nic dzisiaj nie jedzie od <get name="miasto"/></li>
+                                <li>Niestety o 20:52 odjechał ostatni pociąg do <get name="miasto"/></li>
+                            </random>
+                            Proszę przyjść jutro, ale tym razem wcześniej. Do widzenia.
+                        </li>
+                        <li>OKIENKO ZMAKNIETĘ. OTWARTE W GODZNIACH 9-21</li>
         </condition>
       </template>
   </category>
@@ -97,118 +101,150 @@
     <pattern>W TAKIM RAZIE DO *</pattern>
     <template>
         <think> <set name="miasto"><star /></set></think>
-        <condition name="pora">
-            <li value="W">
-                <random>
-                <li>Hmmm dobrze.<delay>2</delay>O której godzinie chciałby Pan wyjechać? Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
-                </random></li>
-                <li>Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
-                </random> O której godzinie chciałby Pan wyjechać? </li>
-                <li>Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
-                 </random> O której godzinie chciałby Pan wyjechać? </li>
-                </random>
-            </li>
-            
-            <li> 
-                <random>
-                <li>Hmmm dobrze.<delay>2</delay>O której godzinie chciałby Pan wyjechać? Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
-                </random></li>
-                <li>Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
-                </random> O której godzinie chciałby Pan wyjechać? </li>
-                <li>Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
-                 </random> O której godzinie chciałby Pan wyjechać? </li>
-                </random>
-            </li>
+        <condition name="hour">
+                        <li value="09"> Na teraz czy później w ciągu dnia?</li>
+                        <li value="10">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="11">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="12">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="13">  Na teraz czy później w ciągu dnia?.</li>
+                        <li value="14">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="15">  
+                            <random>
+                            <li>Jest po 15:00, wiec mogę Panu zaproponować 16:43, 17:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 15:00. Bedą jeszcze jechać o 16:44, 17:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 16:14, 17:27, 18:30 i 20:21</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="16"> 
+                            <random>
+                             <li>Jest po 16:00, wiec mogę Panu zaproponować 16:43, 17:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 16:00. Bedą jeszcze jechać o 16:44, 17:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 17:27, 18:30 i 20:21</li>  
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="17"> 
+                            <random>
+                            <li>Jest po 17:00, wiec mogę Panu zaproponować 17:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 17:00. Bedą jeszcze jechać o 17:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 18:30 i 20:21</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="18"> 
+                            <random>
+                            <li>Jest po 18:00, wiec mogę Panu zaproponować 18:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 18:00. Bedą jeszcze jechać o 18:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 18:30 i 20:21</li>
+                            <li>Niestety o tej godzinie to mogę tylko zaproponować pociąg o 19:33</li> 
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="19">  
+                            <random>
+                                <li>Jest po 19:00, wiec mogę Panu zaproponować 19:22 oraz 20:30</li>
+                                <li>Niestety o tej godzinie jeździ mało pociągów. Bedą jeszcze jechać o 19:51 oraz 20:27</li>
+                                <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 19:30 i 20:21</li>
+                                <li>Niestety o tej godzinie to mogę tylko zaproponować pociąg o 20:33</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="20">  
+                             <random>
+                                <li>Jest po 20:00, wiec mogę Panu zaproponować 20:30 i 21:21</li>
+                                <li>Niestety o tej godzinie jeździ mało pociągów. Bedą jeszcze jechały dwa o 20:27 i 21:12</li>
+                                <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 20:21 i 21:22</li>
+                                <li>Niestety o tej godzinie to mogę tylko zaproponować pociągi o 20:40 i 21:05</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="21">  
+                             <random>
+                                <li>Jest po 21:00 o tej godzinie już nie jedzie żaden pociąg.</li>
+                                <li>Niestety o tej godzinie nie jedzie już zadem pociąg.</li>
+                                <li>Już nic dzisiaj nie jedzie od <get name="miasto"/></li>
+                                <li>Niestety o 20:52 odjechał ostatni pociąg do <get name="miasto"/></li>
+                            </random>
+                            Proszę przyjść jutro, ale tym razem wcześniej. Do widzenia.
+                        </li>
+                        <li>OKIENKO ZMAKNIETĘ. OTWARTE W GODZNIACH 9-21</li>
         </condition>
       </template>
   </category>
   
     <category>
-    <pattern>DOBRZE, W TAKIM RAZIE DO *</pattern>
+    <pattern>* W TAKIM RAZIE DO *</pattern>
     <template>
-        <think> <set name="miasto"><star /></set></think>
-        <condition name="pora">
-            <li value="W">
-                <random>
-                <li>Hmmm dobrze.<delay>2</delay>O której godzinie chciałby Pan wyjechać? Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
-                </random></li>
-                <li>Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
-                </random> O której godzinie chciałby Pan wyjechać? </li>
-                <li>Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
-                 </random> O której godzinie chciałby Pan wyjechać? </li>
-                </random>
-            </li>
-            
-            <li> 
-                <random>
-                <li>Hmmm dobrze.<delay>2</delay>O której godzinie chciałby Pan wyjechać? Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
-                </random></li>
-                <li>Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
-                </random> O której godzinie chciałby Pan wyjechać? </li>
-                <li>Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
-                 </random> O której godzinie chciałby Pan wyjechać? </li>
-                </random>
-            </li>
+        <think> <set name="miasto"><star index="2"/></set></think>
+        <condition name="hour">
+                        <li value="09"> Na teraz czy później w ciągu dnia?</li>
+                        <li value="10">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="11">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="12">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="13">  Na teraz czy później w ciągu dnia?.</li>
+                        <li value="14">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="15">  
+                            <random>
+                            <li>Jest po 15:00, wiec mogę Panu zaproponować 16:43, 17:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 15:00. Bedą jeszcze jechać o 16:44, 17:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 16:14, 17:27, 18:30 i 20:21</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="16"> 
+                            <random>
+                             <li>Jest po 16:00, wiec mogę Panu zaproponować 16:43, 17:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 16:00. Bedą jeszcze jechać o 16:44, 17:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 17:27, 18:30 i 20:21</li>  
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="17"> 
+                            <random>
+                            <li>Jest po 17:00, wiec mogę Panu zaproponować 17:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 17:00. Bedą jeszcze jechać o 17:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 18:30 i 20:21</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="18"> 
+                            <random>
+                            <li>Jest po 18:00, wiec mogę Panu zaproponować 18:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 18:00. Bedą jeszcze jechać o 18:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 18:30 i 20:21</li>
+                            <li>Niestety o tej godzinie to mogę tylko zaproponować pociąg o 19:33</li> 
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="19">  
+                            <random>
+                                <li>Jest po 19:00, wiec mogę Panu zaproponować 19:22 oraz 20:30</li>
+                                <li>Niestety o tej godzinie jeździ mało pociągów. Bedą jeszcze jechać o 19:51 oraz 20:27</li>
+                                <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 19:30 i 20:21</li>
+                                <li>Niestety o tej godzinie to mogę tylko zaproponować pociąg o 20:33</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="20">  
+                             <random>
+                                <li>Jest po 20:00, wiec mogę Panu zaproponować 20:30 i 21:21</li>
+                                <li>Niestety o tej godzinie jeździ mało pociągów. Bedą jeszcze jechały dwa o 20:27 i 21:12</li>
+                                <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 20:21 i 21:22</li>
+                                <li>Niestety o tej godzinie to mogę tylko zaproponować pociągi o 20:40 i 21:05</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="21">  
+                             <random>
+                                <li>Jest po 21:00 o tej godzinie już nie jedzie żaden pociąg.</li>
+                                <li>Niestety o tej godzinie nie jedzie już zadem pociąg.</li>
+                                <li>Już nic dzisiaj nie jedzie od <get name="miasto"/></li>
+                                <li>Niestety o 20:52 odjechał ostatni pociąg do <get name="miasto"/></li>
+                            </random>
+                            Proszę przyjść jutro, ale tym razem wcześniej. Do widzenia.
+                        </li>
+                        <li>OKIENKO ZMAKNIETĘ. OTWARTE W GODZNIACH 9-21</li>
         </condition>
       </template>
   </category>
@@ -217,58 +253,74 @@
     <pattern>TO DO *</pattern>
     <template>
         <think> <set name="miasto"><star /></set></think>
-        <condition name="pora">
-            <li value="W">
-                <random>
-                <li>Hmmm dobrze.<delay>2</delay>O której godzinie chciałby Pan wyjechać? Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
-                </random></li>
-                <li>Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
-                </random> O której godzinie chciałby Pan wyjechać? </li>
-                <li>Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
-                 </random> O której godzinie chciałby Pan wyjechać? </li>
-                </random>
-            </li>
-            
-            <li> 
-                <random>
-                <li>Hmmm dobrze.<delay>2</delay>O której godzinie chciałby Pan wyjechać? Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
-                </random></li>
-                <li>Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
-                </random> O której godzinie chciałby Pan wyjechać? </li>
-                <li>Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
-                 </random> O której godzinie chciałby Pan wyjechać? </li>
-                </random>
-            </li>
+        <condition name="hour">
+                        <li value="09"> Na teraz czy później w ciągu dnia?</li>
+                        <li value="10">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="11">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="12">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="13">  Na teraz czy później w ciągu dnia?.</li>
+                        <li value="14">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="15">  
+                            <random>
+                            <li>Jest po 15:00, wiec mogę Panu zaproponować 16:43, 17:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 15:00. Bedą jeszcze jechać o 16:44, 17:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 16:14, 17:27, 18:30 i 20:21</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="16"> 
+                            <random>
+                             <li>Jest po 16:00, wiec mogę Panu zaproponować 16:43, 17:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 16:00. Bedą jeszcze jechać o 16:44, 17:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 17:27, 18:30 i 20:21</li>  
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="17"> 
+                            <random>
+                            <li>Jest po 17:00, wiec mogę Panu zaproponować 17:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 17:00. Bedą jeszcze jechać o 17:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 18:30 i 20:21</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="18"> 
+                            <random>
+                            <li>Jest po 18:00, wiec mogę Panu zaproponować 18:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 18:00. Bedą jeszcze jechać o 18:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 18:30 i 20:21</li>
+                            <li>Niestety o tej godzinie to mogę tylko zaproponować pociąg o 19:33</li> 
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="19">  
+                            <random>
+                                <li>Jest po 19:00, wiec mogę Panu zaproponować 19:22 oraz 20:30</li>
+                                <li>Niestety o tej godzinie jeździ mało pociągów. Bedą jeszcze jechać o 19:51 oraz 20:27</li>
+                                <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 19:30 i 20:21</li>
+                                <li>Niestety o tej godzinie to mogę tylko zaproponować pociąg o 20:33</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="20">  
+                             <random>
+                                <li>Jest po 20:00, wiec mogę Panu zaproponować 20:30 i 21:21</li>
+                                <li>Niestety o tej godzinie jeździ mało pociągów. Bedą jeszcze jechały dwa o 20:27 i 21:12</li>
+                                <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 20:21 i 21:22</li>
+                                <li>Niestety o tej godzinie to mogę tylko zaproponować pociągi o 20:40 i 21:05</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="21">  
+                             <random>
+                                <li>Jest po 21:00 o tej godzinie już nie jedzie żaden pociąg.</li>
+                                <li>Niestety o tej godzinie nie jedzie już zadem pociąg.</li>
+                                <li>Już nic dzisiaj nie jedzie od <get name="miasto"/></li>
+                                <li>Niestety o 20:52 odjechał ostatni pociąg do <get name="miasto"/></li>
+                            </random>
+                            Proszę przyjść jutro, ale tym razem wcześniej. Do widzenia.
+                        </li>
+                        <li>OKIENKO ZMAKNIETĘ. OTWARTE W GODZNIACH 9-21</li>
         </condition>
       </template>
   </category>
@@ -277,60 +329,153 @@
     <pattern>DOBRZE, TO DO *</pattern>
     <template>
         <think> <set name="miasto"><star /></set></think>
-        <condition name="pora">
-            <li value="W">
-                <random>
-                <li>Hmmm dobrze.<delay>2</delay>O której godzinie chciałby Pan wyjechać? Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
-                </random></li>
-                <li>Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
-                </random> O której godzinie chciałby Pan wyjechać? </li>
-                <li>Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">8</set></think> 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">9</set></think> 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">10</set></think> 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">11</set></think> 17:27, 19:10 i 21:12.</li>
-                 </random> O której godzinie chciałby Pan wyjechać? </li>
-                </random>
-            </li>
-            
-            <li> 
-                <random>
-                <li>Hmmm dobrze.<delay>2</delay>O której godzinie chciałby Pan wyjechać? Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
-                </random></li>
-                <li>Już sprawdzam godziny odjazdu. <delay>4</delay>Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
-                </random> O której godzinie chciałby Pan wyjechać? </li>
-                <li>Pociąg do <get name="miasto"/> odjeżdża o  
-                <random>
-                    <li> <think><set name="set1">1</set></think> 13:15, 14:56, 16:12, 17:45 i 20:10.</li>
-                    <li> <think><set name="set1">2</set></think> 10:00, 12:16, 13:23, 15:48, 17:25 i 21:45.</li>
-                    <li> <think><set name="set1">3</set></think> 10:54, 11:54, 12:13, 13:47, 15:02, 19:27 i 20:47.</li>
-                    <li> <think><set name="set1">4</set></think> 11:25, 14:13, 14:40, 15:21, 17:27, 19:10 i 21:12.</li>
-                 </random> O której godzinie chciałby Pan wyjechać? </li>
-                </random>
-            </li>
+        <condition name="hour">
+                        <li value="09"> Na teraz czy później w ciągu dnia?</li>
+                        <li value="10">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="11">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="12">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="13">  Na teraz czy później w ciągu dnia?.</li>
+                        <li value="14">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="15">  
+                            <random>
+                            <li>Jest po 15:00, wiec mogę Panu zaproponować 16:43, 17:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 15:00. Bedą jeszcze jechać o 16:44, 17:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 16:14, 17:27, 18:30 i 20:21</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="16"> 
+                            <random>
+                             <li>Jest po 16:00, wiec mogę Panu zaproponować 16:43, 17:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 16:00. Bedą jeszcze jechać o 16:44, 17:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 17:27, 18:30 i 20:21</li>  
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="17"> 
+                            <random>
+                            <li>Jest po 17:00, wiec mogę Panu zaproponować 17:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 17:00. Bedą jeszcze jechać o 17:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 18:30 i 20:21</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="18"> 
+                            <random>
+                            <li>Jest po 18:00, wiec mogę Panu zaproponować 18:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 18:00. Bedą jeszcze jechać o 18:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 18:30 i 20:21</li>
+                            <li>Niestety o tej godzinie to mogę tylko zaproponować pociąg o 19:33</li> 
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="19">  
+                            <random>
+                                <li>Jest po 19:00, wiec mogę Panu zaproponować 19:22 oraz 20:30</li>
+                                <li>Niestety o tej godzinie jeździ mało pociągów. Bedą jeszcze jechać o 19:51 oraz 20:27</li>
+                                <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 19:30 i 20:21</li>
+                                <li>Niestety o tej godzinie to mogę tylko zaproponować pociąg o 20:33</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="20">  
+                             <random>
+                                <li>Jest po 20:00, wiec mogę Panu zaproponować 20:30 i 21:21</li>
+                                <li>Niestety o tej godzinie jeździ mało pociągów. Bedą jeszcze jechały dwa o 20:27 i 21:12</li>
+                                <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 20:21 i 21:22</li>
+                                <li>Niestety o tej godzinie to mogę tylko zaproponować pociągi o 20:40 i 21:05</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="21">  
+                             <random>
+                                <li>Jest po 21:00 o tej godzinie już nie jedzie żaden pociąg.</li>
+                                <li>Niestety o tej godzinie nie jedzie już zadem pociąg.</li>
+                                <li>Już nic dzisiaj nie jedzie od <get name="miasto"/></li>
+                                <li>Niestety o 20:52 odjechał ostatni pociąg do <get name="miasto"/></li>
+                            </random>
+                            Proszę przyjść jutro, ale tym razem wcześniej. Do widzenia.
+                        </li>
+                        <li>OKIENKO ZMAKNIETĘ. OTWARTE W GODZNIACH 9-21</li>
         </condition>
       </template>
   </category>
+  
+   <category>
+    <pattern>* DO *</pattern>
+    <template>
+        <think> <set name="miasto"><star index="2"/></set></think>
+        <condition name="hour">
+                        <li value="09"> Na teraz czy później w ciągu dnia?</li>
+                        <li value="10">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="11">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="12">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="13">  Na teraz czy później w ciągu dnia?.</li>
+                        <li value="14">  Na teraz czy później w ciągu dnia?</li>
+                        <li value="15">  
+                            <random>
+                            <li>Jest po 15:00, wiec mogę Panu zaproponować 16:43, 17:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 15:00. Bedą jeszcze jechać o 16:44, 17:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 16:14, 17:27, 18:30 i 20:21</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="16"> 
+                            <random>
+                             <li>Jest po 16:00, wiec mogę Panu zaproponować 16:43, 17:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 16:00. Bedą jeszcze jechać o 16:44, 17:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 17:27, 18:30 i 20:21</li>  
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="17"> 
+                            <random>
+                            <li>Jest po 17:00, wiec mogę Panu zaproponować 17:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 17:00. Bedą jeszcze jechać o 17:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 18:30 i 20:21</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="18"> 
+                            <random>
+                            <li>Jest po 18:00, wiec mogę Panu zaproponować 18:22 oraz 19:30</li>
+                            <li>Niestety do <get name="miasto"/> jeździ mniej pociągów po 18:00. Bedą jeszcze jechać o 18:51 oraz 19:27</li>
+                            <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 18:30 i 20:21</li>
+                            <li>Niestety o tej godzinie to mogę tylko zaproponować pociąg o 19:33</li> 
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="19">  
+                            <random>
+                                <li>Jest po 19:00, wiec mogę Panu zaproponować 19:22 oraz 20:30</li>
+                                <li>Niestety o tej godzinie jeździ mało pociągów. Bedą jeszcze jechać o 19:51 oraz 20:27</li>
+                                <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 19:30 i 20:21</li>
+                                <li>Niestety o tej godzinie to mogę tylko zaproponować pociąg o 20:33</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="20">  
+                             <random>
+                                <li>Jest po 20:00, wiec mogę Panu zaproponować 20:30 i 21:21</li>
+                                <li>Niestety o tej godzinie jeździ mało pociągów. Bedą jeszcze jechały dwa o 20:27 i 21:12</li>
+                                <li>Na dzisiaj do <get name="miasto"/> mamy jeszcze tylko pociągi o 20:21 i 21:22</li>
+                                <li>Niestety o tej godzinie to mogę tylko zaproponować pociągi o 20:40 i 21:05</li>
+                            </random>
+                            . O której godzinie chciałby Pan wyjechać? 
+                        </li>
+                        <li value="21">  
+                             <random>
+                                <li>Jest po 21:00 o tej godzinie już nie jedzie żaden pociąg.</li>
+                                <li>Niestety o tej godzinie nie jedzie już zadem pociąg.</li>
+                                <li>Już nic dzisiaj nie jedzie od <get name="miasto"/></li>
+                                <li>Niestety o 20:52 odjechał ostatni pociąg do <get name="miasto"/></li>
+                            </random>
+                            Proszę przyjść jutro, ale tym razem wcześniej. Do widzenia.
+                        </li>
+                        <li>OKIENKO ZMAKNIETĘ. OTWARTE W GODZNIACH 9-21</li>
+        </condition>
+      </template>
+  </category>
+  
   
 </aiml>
